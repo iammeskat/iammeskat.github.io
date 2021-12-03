@@ -1533,6 +1533,7 @@ proto._filterFindItemElements = function( elems ) {
 proto.getItemElements = function() {
   return this.items.map( function( item ) {
     return item.element;
+    console.log(item)
   });
 };
 
