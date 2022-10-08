@@ -4,7 +4,7 @@ const Header = () => {
       <nav className="container mx-auto flex justify-between items-center text-white text-lg">
         <h2 className="text-xl font-['Autorich_Sans']">MESKAT</h2>
         <ul className="flex items-center  uppercasem ">
-          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-6">
+          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-3 lg:px-6">
             <a href="#home" className="flex items-center space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -15,10 +15,12 @@ const Header = () => {
                 <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
                 <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
               </svg>
-              <p className="text-[crimson] group-hover:text-white">Home</p>
+              <p className="hidden md:block text-[crimson] group-hover:text-white">
+                Home
+              </p>
             </a>
           </li>
-          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-6">
+          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-3 lg:px-6">
             <a href="#about" className="flex items-center space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,10 +35,10 @@ const Header = () => {
                 />
               </svg>
 
-              <p>About</p>
+              <p className="hidden md:block">About</p>
             </a>
           </li>
-          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-6">
+          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-3 lg:px-6">
             <a href="#portfolio" className="flex items-center space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,10 +53,10 @@ const Header = () => {
                 />
                 <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
               </svg>
-              <p>Portfolio</p>
+              <p className="hidden md:block">Portfolio</p>
             </a>
           </li>
-          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-6">
+          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-3 lg:px-6">
             <a href="#blogs" className="flex items-center space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,10 +72,10 @@ const Header = () => {
                 <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
               </svg>
 
-              <p>Blogs</p>
+              <p className="hidden md:block">Blogs</p>
             </a>
           </li>
-          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-6">
+          <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-3 lg:px-6">
             <a href="#contact" className="flex items-center space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +90,7 @@ const Header = () => {
                 />
               </svg>
 
-              <p>Contact</p>
+              <p className="hidden md:block">Contact</p>
             </a>
           </li>
         </ul>

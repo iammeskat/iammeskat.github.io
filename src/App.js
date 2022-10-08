@@ -11,7 +11,7 @@ function App() {
 
     <Header/>
 
-    <div className="container">
+    <div className="container mx-auto">
       <Home/>
         <About />
         <Portfolio />
