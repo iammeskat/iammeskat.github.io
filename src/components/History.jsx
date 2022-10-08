@@ -4,7 +4,7 @@ const History = (props) => {
     <div className="mx-5 pb-10 border-l min-h-[10rem]">
       <div className="-ml-5 -mt-5 flex items-center space-x-4">
         <div className="w-10 h-10 rounded-full bg-[crimson] flex items-center justify-center">
-          <img class="w-5 h-5" src="./images/academicCap.svg" alt="" />
+          <img className="w-5 h-5" src="./images/academicCap.svg" alt="" />
         </div>
         <div className="rounded-full bg-[#1a1a1a] py-1 px-3">
           <h2>{time}</h2>
