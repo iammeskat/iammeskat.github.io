@@ -16,35 +16,13 @@ const ProjectCard = (props) => {
           <div className="flex items-center justify-between space-x-1 bg-[crimson] rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300">
             <span className="pl-1">Github</span>
             <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-3 h-3 text-[crimson]"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <img className="w-3 h-3" src="/images/githubRed.svg" alt="" />
             </div>
           </div>
           <div className="flex items-center justify-between space-x-1 bg-[crimson] rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300">
             <span className="pl-1">Live link</span>
             <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-3 h-3 text-[crimson]"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <img className="w-3 h-3" src="/images/link.svg" alt="" />
             </div>
           </div>
         </div>
