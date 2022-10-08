@@ -9,9 +9,9 @@ const Contact = () => {
 
       <div className="space-y-6">
         <h2 className="font-bold text-3xl uppercase">get in touch</h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <Address />
-          <div className="col-span-2">
+          <div className="lg:col-span-2">
             <ContactForm />
           </div>
         </div>
