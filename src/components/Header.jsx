@@ -2,7 +2,10 @@ const Header = () => {
   return (
     <section className="sticky top-0 z-20 bg-[#1a1a1a] shadow">
       <nav className="container mx-auto flex justify-between items-center text-white text-lg">
-        <h2 className="text-xl font-['Autorich_Sans']">MESKAT</h2>
+        <div className="flex space-x-1">
+          <h2 className="text-xl font-['Autorich_Sans']">MESKAT</h2>
+          <span className="text-xs text-yellow-500">Beta</span>
+        </div>
         <ul className="flex items-center  uppercasem ">
           <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-3 lg:px-6">
             <a href="#home" className="flex items-center space-x-1">
