@@ -7,17 +7,15 @@ import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
-    <main className="min-h-screen bg-[#0d0d0d] text-white">
-
-    <Header/>
-
-    <div className="container mx-auto space-y-12 md:space-y-20 py-12 md:py-20">
-      <Home/>
-      <About />
-      <Portfolio />
-      <Contact/>
-    </div>
-  </main>
+    <>
+      <Header/>
+      <main>
+        <Home/>
+        <About />
+        <Portfolio />
+        <Contact/>
+      </main>
+    </>
   );
 }
 

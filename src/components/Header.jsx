@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <section className="sticky top-0 z-20 bg-[#1a1a1a] shadow">
+    <div className="sticky top-0 z-20 bg-[#1a1a1a] shadow">
       <nav className="container mx-auto flex justify-between items-center text-white text-lg">
         <div className="flex space-x-1">
           <h2 className="text-xl font-['Autorich_Sans']">MESKAT</h2>
@@ -98,7 +98,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </section>
+    </div>
   );
 };
 
