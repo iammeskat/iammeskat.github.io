@@ -8,7 +8,7 @@ const Header = () => {
         </div>
         <ul className="flex items-center  uppercasem ">
           <li className="group hover:bg-[crimson] transition-all duration-300 py-3 px-3 lg:px-6">
-            <a href="#home" className="flex items-center space-x-1">
+            <a href="/#" className="flex items-center space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
