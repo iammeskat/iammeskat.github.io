@@ -712,6 +712,18 @@ section {
   }
 }
 
+.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(220 20 60 / var(--tw-text-opacity));
+}
+
+.active:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -723,6 +735,10 @@ section {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -755,16 +771,20 @@ section {
   margin-bottom: -2.5rem;
 }
 
-.-mt-1 {
-  margin-top: -0.25rem;
-}
-
 .-mt-0\.5 {
   margin-top: -0.125rem;
 }
 
 .-mt-0 {
   margin-top: -0px;
+}
+
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.-mt-14 {
+  margin-top: -3.5rem;
 }
 
 .flex {
@@ -899,6 +919,10 @@ section {
   --tw-rotate: -45deg;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
@@ -1050,17 +1074,16 @@ section {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .p-1\.5 {
   padding: 0.375rem;
 }
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-5 {
@@ -1073,10 +1096,6 @@ section {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .py-3 {
@@ -1125,8 +1144,12 @@ section {
   padding-top: 3rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-center {
@@ -1260,26 +1283,6 @@ section {
   width: 8rem;
 }
 
-.hover\:w-20:hover {
-  width: 5rem;
-}
-
-.hover\:w-auto:hover {
-  width: auto;
-}
-
-.hover\:w-40:hover {
-  width: 10rem;
-}
-
-.hover\:w-32:hover {
-  width: 8rem;
-}
-
-.hover\:justify-start:hover {
-  justify-content: flex-start;
-}
-
 .hover\:bg-\[crimson\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 20 60 / var(--tw-bg-opacity));
@@ -1290,14 +1293,6 @@ section {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:p-2:hover {
-  padding: 0.5rem;
-}
-
-.hover\:pl-3:hover {
-  padding-left: 0.75rem;
-}
-
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1305,10 +1300,6 @@ section {
 
 .focus\:outline-0:focus {
   outline-width: 0px;
-}
-
-.group:hover .group-hover\:block {
-  display: block;
 }
 
 .group:hover .group-hover\:w-32 {

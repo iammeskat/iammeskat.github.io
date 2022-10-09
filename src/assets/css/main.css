@@ -31,4 +31,7 @@
   .content {
     @apply space-y-6 md:space-y-10;
   }
+  .active {
+    @apply text-[crimson] hover:text-white bg-black;
+  }
 }
