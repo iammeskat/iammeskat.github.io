@@ -14,6 +14,7 @@ const History = (props) => {
         <h2 className="text-xl">{title}</h2>
         <p>{description}</p>
       </div>
+      <div className="-ml-2 -mb-10  w-4 h-4 rounded-full bg-red-500"></div>
     </div>
   );
 };

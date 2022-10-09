@@ -11,11 +11,11 @@ function App() {
 
     <Header/>
 
-    <div className="container mx-auto">
+    <div className="container mx-auto space-y-12 md:space-y-20 py-12 md:py-20">
       <Home/>
-        <About />
-        <Portfolio />
-        <Contact/>
+      <About />
+      <Portfolio />
+      <Contact/>
     </div>
   </main>
   );

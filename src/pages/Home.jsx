@@ -2,13 +2,13 @@ import BtnAbout from "../components/BtnAbout";
 
 const Home = () => {
   return (
-    <section
+    <div
       id="home"
-      className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 py-10 w-full"
+      className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 w-full"
     >
       <div className="lg:col-span-2 w-full flex justify-center">
         <img
-          className="max-h-[225px] max-w-[180] md:max-h-[450px] md:max-w-[360] rounded-xl border-2 border-[#1a1a1a]"
+          className="max-h-[225px] max-w-[180] md:max-h-[450px] md:max-w-[360] lg:max-h-[675px]L lg:max-w-[540]L rounded-xl border-2 border-[#1a1a1a]"
           src="./images/me.jpg"
           alt=""
         />
@@ -25,7 +25,7 @@ const Home = () => {
 
         <BtnAbout />
       </div>
-    </section>
+    </div>
   );
 };
 

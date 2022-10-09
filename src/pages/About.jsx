@@ -4,7 +4,7 @@ import Timeline from "../components/Timeline";
 
 const About = () => {
   return (
-    <section id="about" className="py-10 space-y-10 md:space-y-16">
+    <section id="about">
       <AboutMe />
       <Skill />
       <Timeline />

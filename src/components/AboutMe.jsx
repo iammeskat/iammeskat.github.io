@@ -4,9 +4,8 @@ import Summary from "./Summary";
 
 const AboutMe = () => {
   return (
-    <div className="space-y-10">
+    <div className="content">
       <Headline titlePart1="about" titlePart2="me" reverse={false} />
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <PersonalInfo />
         <Summary />

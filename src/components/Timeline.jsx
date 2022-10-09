@@ -4,7 +4,7 @@ import History from "./History";
 
 const Timeline = () => {
   return (
-    <div className="space-y-10">
+    <div className="content space-y-12 md:space-y-16">
       <Headline titlePart1="my" titlePart2="education" reverse={true} />
 
       <div className="grid grid-cols-1 md:grid-cols-2">
