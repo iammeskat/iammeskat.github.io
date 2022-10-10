@@ -37,9 +37,9 @@
   }
 
   .primary-color {
-    @apply text-[crimson];
+    @apply text-green-500;
   }
   .primary-bg {
-    @apply bg-[crimson];
+    @apply bg-green-500;
   }
 }
