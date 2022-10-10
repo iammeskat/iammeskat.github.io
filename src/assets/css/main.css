@@ -37,9 +37,9 @@
   }
 
   .primary-color {
-    @apply text-blue-500;
+    @apply text-[crimson];
   }
   .primary-bg {
-    @apply bg-blue-500;
+    @apply bg-[crimson];
   }
 }

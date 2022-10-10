@@ -608,7 +608,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(220 20 60 / var(--tw-bg-opacity));
   border-radius: 1.5rem;
   border: 2px solid black;
 }
@@ -715,7 +715,7 @@ section {
 
 .active {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(220 20 60 / var(--tw-text-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
@@ -727,12 +727,12 @@ section {
 
 .primary-color {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(220 20 60 / var(--tw-text-opacity));
 }
 
 .primary-bg {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(220 20 60 / var(--tw-bg-opacity));
 }
 
 .sticky {
@@ -1179,6 +1179,11 @@ section {
   line-height: 2rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1187,11 +1192,6 @@ section {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-4xl {
@@ -1273,12 +1273,12 @@ section {
 
 .hover\:primary-color:hover {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(220 20 60 / var(--tw-text-opacity));
 }
 
 .hover\:primary-bg:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(220 20 60 / var(--tw-bg-opacity));
 }
 
 .hover\:w-\[10rem\]:hover {
