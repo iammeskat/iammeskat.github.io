@@ -16,7 +16,12 @@ const PersonalInfo = () => {
           </li>
           <li>
             <span className="font-thin text-gray-400">Email:</span>{" "}
-            meskatcse@gmail.com
+            <a
+              className="hover:primary-color"
+              href="mailto:meskatcse@gmail.com"
+            >
+              meskatcse@gmail.com
+            </a>
           </li>
           <li>
             <span className="font-thin text-gray-400">Address:</span>{" "}
