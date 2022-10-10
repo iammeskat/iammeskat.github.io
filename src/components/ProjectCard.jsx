@@ -1,3 +1,6 @@
+import IconGithubLink from "./icons/IconGuthubLink";
+import IconLink from "./icons/IconLink";
+
 const ProjectCard = (props) => {
   const { title, description, img, github, live } = props;
   return (
@@ -15,20 +18,20 @@ const ProjectCard = (props) => {
         <div className="flex justify-center space-x-4">
           <a
             href={github}
-            className="flex items-center justify-between space-x-1 bg-[crimson] rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
+            className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
           >
             <span className="pl-1">Github</span>
             <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">
-              <img className="w-3 h-3" src="/images/githubRed.svg" alt="" />
+              <IconGithubLink />
             </div>
           </a>
           <a
             href={live}
-            className="flex items-center justify-between space-x-1 bg-[crimson] rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
+            className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
           >
             <span className="pl-1">Live link</span>
             <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">
-              <img className="w-3 h-3" src="/images/link.svg" alt="" />
+              <IconLink />
             </div>
           </a>
         </div>
