@@ -4,7 +4,7 @@ import SocialLinks from "../components/SocialLinks";
 const Home = () => {
   return (
     <div id="home" className="-mt-[52px] pt-[52px] border border-[#0d0d0d] ">
-      <div className="w-full h-[calc(100vh-92px)] my-5 flex flex-col justify-center space-y-8 md:space-y-14 lg:space-y-0 lg:grid lg:grid-cols-5 lg:gap-8 p-4 bg-[#141313] rounded-2xl">
+      <div className="w-full min-h-[calc(100vh-92px)] my-5 flex flex-col justify-center space-y-8 md:space-y-14 lg:space-y-0 lg:grid lg:grid-cols-5 lg:gap-8 p-4 bg-[#141313] rounded-2xl">
         <div className="lg:col-span-2 w-full flex justify-center items-center">
           <img
             className="max-h-[225px] max-w-[180] md:max-h-[450px] md:max-w-[360] lg:max-h-[675px]L lg:max-w-[540]L rounded-xl border-2 border-[#1a1a1a]"

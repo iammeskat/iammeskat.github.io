@@ -863,6 +863,10 @@ section {
   min-height: 10rem;
 }
 
+.min-h-\[calc\(100vh-92px\)\] {
+  min-height: calc(100vh - 92px);
+}
+
 .w-\[9rem\] {
   width: 9rem;
 }
