@@ -5,7 +5,7 @@ const PersonalInfo = () => {
     <div className="space-y-3 md:space-y-6">
       <h2 className="font-bold text-xl md:text-3xl uppercase">personal info</h2>
 
-      <div className="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0">
+      <div className="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 md:font-medium text-lg">
         <ul className="space-y-2 md:space-y-4">
           <li>
             <span className="font-thin text-gray-400">Name:</span> Meskatul
