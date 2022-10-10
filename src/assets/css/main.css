@@ -17,6 +17,7 @@
 
   html::-webkit-scrollbar-thumb {
     @apply bg-[crimson] rounded-3xl;
+    border: 2px solid black;
   }
   body {
     @apply min-h-screen bg-[#0d0d0d] text-white;

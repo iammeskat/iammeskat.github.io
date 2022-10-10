@@ -3,7 +3,9 @@ const SocialLink = (props) => {
   return (
     <a
       href={url}
+      target="_blank"
       className="group flex items-center rounded-full bg-[#1a1a1a] hover:bg-[crimson] transition-all duration-300"
+      rel="noreferrer"
     >
       <div href={url} className="w-10 h-10 flex items-center justify-center ">
         <img className="w-5 h-5" src={`/images/${icon}`} alt="" />

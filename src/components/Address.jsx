@@ -12,13 +12,20 @@ const Address = () => {
         title="Address"
         icon="map.svg"
         data="Shovandandi-4370, Patiya, Chattogram, Bangladesh"
+        type="text"
       />
       <ContactCard
         title="Email"
         icon="envelop.svg"
         data="meskatcse@gmail.com"
+        type="email"
       />
-      <ContactCard title="Phone" icon="call.svg" data="+880 1754-6587**" />
+      <ContactCard
+        title="Phone"
+        icon="call.svg"
+        data="+880 1754-6587**"
+        type="phone"
+      />
 
       <SocialLinks />
     </div>
