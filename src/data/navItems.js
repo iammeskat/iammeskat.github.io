@@ -1,7 +1,7 @@
 import IconBriefcase from "../components/icons/IconBriefcase";
 import IconContact from "../components/icons/IconContact";
 import IconHome from "../components/icons/IconHome";
-import IconPage from "../components/icons/IconPage";
+// import IconPage from "../components/icons/IconPage";
 import IconUser from "../components/icons/IconUser";
 export const navItems = [
     {
@@ -19,11 +19,11 @@ export const navItems = [
       to: "portfolio",
       icon: IconBriefcase,
     },
-    {
-      title: "Blogs",
-      to: "blogs",
-      icon: IconPage,
-    },
+    // {
+    //   title: "Blogs",
+    //   to: "blogs",
+    //   icon: IconPage,
+    // },
     {
       title: "Contact",
       to: "contact",

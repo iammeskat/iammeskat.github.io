@@ -1,46 +1,108 @@
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import BtnSend from "./BtnSend";
 
 const ContactForm = () => {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <input
-        className="w-full py-3 px-4 rounded-full focus:outline-0 bg-[#1a1a1a]"
-        type="text"
-        name="name"
-        id=""
-        placeholder="Your name"
-      />
-      <input
-        className="w-full py-3 px-4 rounded-full focus:outline-0 bg-[#1a1a1a]"
-        type="number"
-        name="number"
-        id=""
-        placeholder="Your number"
-      />
-      <input
-        className="w-full py-3 px-4 rounded-full focus:outline-0 bg-[#1a1a1a]"
-        type="email"
-        name="email"
-        id=""
-        placeholder="Your email"
-      />
-      <input
-        className="w-full py-3 px-4 rounded-full focus:outline-0 bg-[#1a1a1a]"
-        type="text"
-        name="subject"
-        id=""
-        placeholder="Your subject"
-      />
+  const [data, setData] = useState({
+    subject: "",
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [status, setStatus] = useState(0); //0=draft/null, 1=sending, 2=sent, 3=failed
+  const serviceID = "service_3bhelth";
+  const templateID = "template_temae8a";
+  const publicKey = "g0xonKsyzP1q5yp7X";
+  const templateParams = { ...data };
 
-      <textarea
-        className="py-3 px-4 w-full rounded-lg focus:outline-0 bg-[#1a1a1a] md:col-span-2"
-        name="body"
-        id=""
-        rows="10"
-        placeholder="Your message"
-      ></textarea>
-      <BtnSend />
-    </div>
+  const send = async () => {
+    try {
+      const res = await emailjs.send(
+        serviceID,
+        templateID,
+        templateParams,
+        publicKey
+      );
+      if (res.status === 200) {
+        setData({
+          subject: "",
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setStatus(2);
+      } else {
+        setStatus(3);
+      }
+    } catch (error) {
+      setStatus(3);
+    }
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus(1);
+    send();
+  };
+  const handleChange = (e) => {
+    setStatus !== 0 && setStatus(0);
+    let inputtedData = { ...data };
+    inputtedData[e.target.name] = e.target.value;
+    setData(inputtedData);
+  };
+  return (
+    <form onSubmit={(e) => handleSubmit(e)} action="#" method="post">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input
+          onChange={(e) => handleChange(e)}
+          className="input-field"
+          type="text"
+          name="name"
+          value={data.name}
+          placeholder="Your name"
+          required
+        />
+        <input
+          onChange={(e) => handleChange(e)}
+          className="input-field"
+          type="number"
+          name="phone"
+          value={data.phone}
+          placeholder="Your number"
+          required
+        />
+        <input
+          onChange={(e) => handleChange(e)}
+          className="input-field"
+          type="email"
+          name="email"
+          value={data.email}
+          placeholder="Your email"
+          required
+        />
+        <input
+          onChange={(e) => handleChange(e)}
+          className="input-field"
+          type="text"
+          name="subject"
+          value={data.subject}
+          placeholder="Your subject"
+          required
+        />
+
+        <textarea
+          onChange={(e) => handleChange(e)}
+          className="input-field md:col-span-2"
+          name="message"
+          value={data.message}
+          rows="10"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <BtnSend status={status} />
+      </div>
+    </form>
   );
 };
 
