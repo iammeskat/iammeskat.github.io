@@ -29,6 +29,21 @@
   section {
     @apply space-y-12 md:space-y-20 pt-12 md:pt-20;
   }
+  .home-parent {
+    @apply -mt-[48px] pt-[48px] md:-mt-[52px] md:pt-[52px] border-y border-[#0d0d0d];
+  }
+  .home {
+    @apply w-full min-h-[calc(100vh-82px)] md:min-h-[calc(100vh-92px)] rounded-2xl my-4 md:my-5 p-4 md:p-10 bg-[#141313] flex flex-col lg:flex-row justify-center items-center space-y-4 md:space-y-8 lg:space-y-0 lg:space-x-10 xl:space-x-14;
+  }
+  .home .img {
+    @apply max-w-[200px] md:max-w-[400px] 2xl:max-w-[420px] flex justify-center items-center;
+  }
+  .home .img img {
+    @apply w-full rounded-xl  bg-gray-900;
+  }
+  .home .about {
+    @apply flex flex-col justify-center items-center lg:items-start space-y-2 md:space-y-4;
+  }
   .input-field {
     @apply w-full py-3 px-4 rounded focus:outline-0 bg-[#1a1a1a];
   }
