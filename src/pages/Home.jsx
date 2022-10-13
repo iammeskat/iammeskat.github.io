@@ -16,8 +16,9 @@ const Home = () => {
             Software Engineer | Programmer
           </p>
           <p className="text-centerm w-full lg:max-w-[35rem] lg:text-left text-justify">
-            Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Amet Porro
-            Facere Expedita Ab Atque A Consectetur Odit Vel Soluta Itaque.
+            Hello, I’m a full stack web developer from Bangladesh. I have
+            experience in web development, design, and customization. Also, I am
+            good at database designing and software requirements analysis.
           </p>
           <SocialLinks />
           <BtnAbout />
