@@ -1505,6 +1505,10 @@ section {
   .md\:font-medium {
     font-weight: 500;
   }
+
+  .group:hover .md\:group-hover\:w-32 {
+    width: 8rem;
+  }
 }
 
 @media (min-width: 1024px) {
