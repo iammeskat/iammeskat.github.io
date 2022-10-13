@@ -1406,6 +1406,10 @@ section {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.hover\:font-medium:hover {
+  font-weight: 500;
+}
+
 .group:hover .group-hover\:w-32 {
   width: 8rem;
 }
