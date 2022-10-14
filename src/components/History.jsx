@@ -1,7 +1,7 @@
 const History = (props) => {
   const { time, title, description } = props;
   return (
-    <div className="mx-5 pb-10 border-l min-h-[10rem]">
+    <div className="mx-5 border-l pb-10 relative">
       <div className="-ml-5 -mt-5 flex items-center space-x-4">
         <div className="w-10 h-10 rounded-full primary-bg flex items-center justify-center">
           <img className="w-5 h-5" src="./images/academicCap.svg" alt="" />
@@ -10,11 +10,11 @@ const History = (props) => {
           <h2>{time}</h2>
         </div>
       </div>
-      <div className="ml-9 py-5 space-y-3">
+      <div className="ml-9 py-2 space-y-1">
         <h2 className="text-xl">{title}</h2>
-        <p>{description}</p>
+        <p className="text-gray-400">{description}</p>
       </div>
-      <div className="-ml-2 -mb-10  w-4 h-4 rounded-full primary-bg"></div>
+      <div className="absolute bottom-0 -ml-2    w-4 h-4 rounded-full primary-bg"></div>
     </div>
   );
 };

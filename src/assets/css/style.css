@@ -822,8 +822,8 @@ section {
 @media (min-width: 768px) {
   .home .about > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
   }
 }
 
@@ -884,6 +884,14 @@ section {
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -891,6 +899,10 @@ section {
 
 .top-0 {
   top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .z-20 {
@@ -995,8 +1007,20 @@ section {
   height: 10rem;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .min-h-\[10rem\] {
   min-height: 10rem;
+}
+
+.min-h-\[15rem\] {
+  min-height: 15rem;
+}
+
+.min-h-\[12rem\] {
+  min-height: 12rem;
 }
 
 .w-\[9rem\] {
@@ -1170,6 +1194,12 @@ section {
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1235,6 +1265,10 @@ section {
   padding: 1.5rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1255,6 +1289,11 @@ section {
   padding-bottom: 0.75rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -1267,8 +1306,20 @@ section {
   padding-left: 0.25rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.align-text-bottom {
+  vertical-align: text-bottom;
 }
 
 .font-\[\'Autorich_Sans\'\] {
@@ -1423,6 +1474,10 @@ section {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:h-44 {
+    height: 11rem;
   }
 
   .md\:w-32 {
