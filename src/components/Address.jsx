@@ -7,9 +7,9 @@ import SocialLinks from "./SocialLinks";
 const Address = () => {
   return (
     <div className="space-y-6">
-      <p>
-        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Quas Dolorem
-        Sunt Sapiente Vel Minus Eaque Voluptate Fugit Corrupti Omnis Tempora?
+      <p className="text-gray-400">
+        Feel free to contact me if you need anything else. You can contact me by
+        email, phone, or contact form. I will get back to you soon.
       </p>
 
       <ContactCard

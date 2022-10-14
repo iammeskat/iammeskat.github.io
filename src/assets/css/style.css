@@ -1094,10 +1094,6 @@ section {
   flex-direction: column;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1275,10 +1271,6 @@ section {
   text-align: center;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
 .font-\[\'Autorich_Sans\'\] {
   font-family: 'Autorich Sans';
 }
@@ -1404,14 +1396,6 @@ section {
 .hover\:bg-gray-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
-.hover\:font-medium:hover {
-  font-weight: 500;
-}
-
-.group:hover .group-hover\:w-32 {
-  width: 8rem;
 }
 
 .group:hover .group-hover\:-rotate-45 {
@@ -1543,10 +1527,6 @@ section {
 
   .lg\:text-left {
     text-align: left;
-  }
-
-  .lg\:text-justify {
-    text-align: justify;
   }
 
   .lg\:text-8xl {
