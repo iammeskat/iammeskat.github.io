@@ -86,7 +86,7 @@ const Settings = () => {
           <h2>Themes</h2>
         </div>
         <div className="flex justify-between bg-[#0d0d0d] px-2 py-0.5 rounded-sm text-sm font-medium mb-2">
-          <label for="dark-mode ">Dark theme:</label>
+          <label htmlFor="dark-mode ">Dark theme:</label>
           <input type="checkbox" name="" id="dark-mode" />
         </div>
         <div className="bg-[#0d0d0d] px-2 py-0.5 rounded-sm text-sm font-medium">
