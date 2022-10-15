@@ -4,6 +4,9 @@
 @layer base {
 }
 @layer components {
+  .themes {
+    @apply bg-green-500 bg-[crimson] bg-blue-500 bg-yellow-500 bg-purple-500 bg-fuchsia-500 bg-pink-600 bg-sky-500 bg-teal-500 text-green-500 text-[crimson] text-blue-500 text-yellow-500 text-purple-500 text-fuchsia-500 text-pink-600 text-sky-500 text-teal-500;
+  }
   html {
     scroll-behavior: smooth;
   }
