@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { navItems } from "../data/navItems";
-import BtnSetting from "./BtnSetting";
+// import BtnSetting from "./BtnSetting";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
 import Settings from "./Settings";
@@ -21,7 +21,7 @@ const Header = () => {
               />
             );
           })}
-          <BtnSetting onClickHandler={() => setShowSetting(!showSetting)} />
+          {/* <BtnSetting onClickHandler={() => setShowSetting(!showSetting)} /> */}
         </ul>
       </nav>
       {showSetting && <Settings />}

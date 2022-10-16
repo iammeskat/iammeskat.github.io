@@ -2,11 +2,11 @@ export const timelineData = [
     {
         time: "2017",
         title: "Higher Secodary School Certificate (HSC)",
-        description: "I completed my Higher Secondary School degree from BGC Trust Academy (School & College)"
+        description: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Quia Explicabo Magni Est Quo Vitae Quis Veritatis Fugiat Optio Placeat Enim!"
     },{
         time: "2017",
         title: "Joined University",
-        description: "I admitted in the Department of Computer Science & Engineering in Premier University"
+        description: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Quia Explicabo Magni Est Quo Vitae Quis Veritatis Fugiat Optio Placeat Enim!"
     },{
         time: "2019",
         title: "Completed PHP-Web Development Course",
@@ -26,7 +26,7 @@ export const timelineData = [
     },{
         time: "2021",
         title: "Complted My Graduation",
-        description: "Graduated from Premier University,Chittagong"
+        description: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Quia Explicabo Magni Est Quo Vitae Quis Veritatis Fugiat Optio Placeat Enim!"
     },{
         time: "2022",
         title: "Complted 'Amazon Web Service (AWS) Cloud Foundations' Course",
