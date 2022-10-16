@@ -13,7 +13,7 @@ const Footer = () => {
           activeClass="active"
           to="home"
           spy
-          className="font-medium hover:primary-color cursor-pointer"
+          className="font-medium hover:primary-color cursor-pointer underline"
         >
           Meskatul Islam
         </Link>
