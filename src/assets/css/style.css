@@ -959,6 +959,38 @@ section {
   margin-top: -0px;
 }
 
+.-ml-4 {
+  margin-left: -1rem;
+}
+
+.-ml-6 {
+  margin-left: -1.5rem;
+}
+
+.-ml-\[-1\.50rem\] {
+  margin-left: 1.50rem;
+}
+
+.-ml-\[1\.50rem\] {
+  margin-left: -1.50rem;
+}
+
+.-ml-\[1\.30rem\] {
+  margin-left: -1.30rem;
+}
+
+.-ml-\[1\.35rem\] {
+  margin-left: -1.35rem;
+}
+
+.-ml-\[0\.6rem\] {
+  margin-left: -0.6rem;
+}
+
+.-ml-\[0\.7rem\] {
+  margin-left: -0.7rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1254,6 +1286,10 @@ section {
   border-left-width: 1px;
 }
 
+.border-l-4 {
+  border-left-width: 4px;
+}
+
 .border-slate-400 {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
@@ -1386,6 +1422,11 @@ section {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pl-2 {
