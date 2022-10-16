@@ -1,10 +1,14 @@
+import { Link } from "react-scroll";
+
 const BtnAbout = () => {
   return (
-    <a
-      href="#about"
-      className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[9rem] p-1.5 hover:w-[10rem] transition-all duration-300"
+    <Link
+      activeClass="active"
+      to="about"
+      spy
+      className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[9rem] p-1.5 hover:w-[10rem] transition-all duration-300 cursor-pointer"
     >
-      <span className="pl-2">About Me</span>
+      <span className="pl-2 text-white">About Me</span>
       <div className="w-9 h-9 rounded-full flex items-center justify-center bg-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +23,7 @@ const BtnAbout = () => {
           />
         </svg>
       </div>
-    </a>
+    </Link>
   );
 };
 

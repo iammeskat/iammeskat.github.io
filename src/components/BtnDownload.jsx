@@ -1,8 +1,12 @@
+import { generalData } from "../data/generalData";
+
 const BtnDownload = () => {
   return (
     <a
-      href="#m"
+      href={generalData.cvLink}
+      target="_blank"
       className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[10rem] p-1.5 hover:w-[11rem] transition-all duration-300"
+      rel="noreferrer"
     >
       <span className="pl-2">Download CV</span>
       <div className="w-9 h-9 rounded-full flex items-center justify-center bg-white">
