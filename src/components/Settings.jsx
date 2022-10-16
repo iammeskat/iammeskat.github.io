@@ -1,4 +1,71 @@
-const Settings = (props) => {
+import { useState } from "react";
+
+const Settings = () => {
+  const [theme, setTheme] = useState({
+    color: "text-green-500",
+    bg: "bg-green-500",
+  });
+  const changeTheme = (id) => {
+    let tempTheme = { ...theme };
+    switch (id) {
+      case 1:
+        tempTheme = {
+          color: "text-[crimson]",
+          bg: "text-[crimson]",
+        };
+        break;
+      case 2:
+        tempTheme = {
+          color: "text-blue-500",
+          bg: "text-blue-500",
+        };
+        break;
+      case 3:
+        tempTheme = {
+          color: "text-yellow-500",
+          bg: "text-yellow-500",
+        };
+        break;
+      case 4:
+        tempTheme = {
+          color: "text-purple-500",
+          bg: "text-purple-500",
+        };
+        break;
+      case 5:
+        tempTheme = {
+          color: "text-fuchsia-500",
+          bg: "text-fuchsia-500",
+        };
+        break;
+      case 6:
+        tempTheme = {
+          color: "text-pink-500",
+          bg: "text-pink-500",
+        };
+        break;
+      case 7:
+        tempTheme = {
+          color: "text-sky-500",
+          bg: "text-sky-500",
+        };
+        break;
+      case 8:
+        tempTheme = {
+          color: "text-teal-500",
+          bg: "text-teal-500",
+        };
+        break;
+
+      default:
+        tempTheme = {
+          color: "text-green-500",
+          bg: "text-green-500",
+        };
+        break;
+    }
+    setTheme(tempTheme);
+  };
   return (
     <div className="container mx-auto flex justify-end">
       <div className="absolute  w-60 rounded overflow-hidden bg-[#1a1a1a] mt-1 p-2 shadow">
@@ -7,7 +74,7 @@ const Settings = (props) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className={`w-5 h-5 primary-color`}
+            className={`w-5 h-5 ${theme.color}`}
           >
             <path
               fillRule="evenodd"
@@ -26,39 +93,39 @@ const Settings = (props) => {
           <p className="mb-2">Colors:</p>
           <div className="grid grid-cols-6 gap-2 pb-2">
             <button
-              onClick={() => props.setColor(0)}
+              onClick={() => changeTheme(0)}
               className="w-full aspect-square bg-green-500 rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(1)}
+              onClick={() => changeTheme(1)}
               className="w-full aspect-square bg-[crimson] rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(2)}
+              onClick={() => changeTheme(2)}
               className="w-full aspect-square bg-blue-500 rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(3)}
+              onClick={() => changeTheme(3)}
               className="w-full aspect-square bg-yellow-500 rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(4)}
+              onClick={() => changeTheme(4)}
               className="w-full aspect-square bg-purple-500 rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(5)}
+              onClick={() => changeTheme(5)}
               className="w-full aspect-square bg-fuchsia-500 rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(6)}
+              onClick={() => changeTheme(6)}
               className="w-full aspect-square bg-pink-600 rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(7)}
+              onClick={() => changeTheme(7)}
               className="w-full aspect-square bg-sky-500 rounded-full"
             ></button>
             <button
-              onClick={() => props.setColor(8)}
+              onClick={() => changeTheme(8)}
               className="w-full aspect-square bg-teal-500 rounded-full"
             ></button>
           </div>
