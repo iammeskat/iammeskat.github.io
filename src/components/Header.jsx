@@ -4,7 +4,7 @@ import { navItems } from "../data/navItems";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
 import Settings from "./Settings";
-const Header = () => {
+const Header = (props) => {
   const [showSetting, setShowSetting] = useState(false);
   return (
     <header className="sticky top-0 z-20 bg-[#1a1a1a] shadow">
@@ -24,7 +24,7 @@ const Header = () => {
           {/* <BtnSetting onClickHandler={() => setShowSetting(!showSetting)} /> */}
         </ul>
       </nav>
-      {showSetting && <Settings />}
+      {showSetting && <Settings setColor={props.setColor} />}
     </header>
   );
 };
