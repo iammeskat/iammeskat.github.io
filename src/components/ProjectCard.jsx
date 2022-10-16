@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
         />
       </div>
       <div className="w-full flex flex-col items-center space-y-2">
-        <h2 className="text-xl">{title}</h2>
+        <h2 className="text-xl text-center">{title}</h2>
         <p className="text-center text-gray-400">{description}</p>
         <div className="flex justify-center space-x-4">
           <a
