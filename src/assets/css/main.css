@@ -19,7 +19,7 @@
   }
 
   html::-webkit-scrollbar-thumb {
-    @apply primary-bgm rounded-3xl;
+    @apply primary-bg rounded-3xl;
     border: 2px solid black;
   }
   body {
@@ -60,7 +60,7 @@
   .primary-color {
     @apply text-green-500;
   }
-  .primary-bgm {
+  .primary-bg {
     @apply bg-green-500;
   }
 }

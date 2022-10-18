@@ -8,8 +8,9 @@ const Address = () => {
   return (
     <div className="space-y-6">
       <p className="text-gray-400">
-        Feel free to contact me if you need anything else. You can contact me by
-        email, phone, or contact form. I will get back to you soon.
+        If I can be of assistance, please do not hesitate to contact me. You can
+        contact me by email, phone, or by filling out the contact form. I will
+        get back to you soon.
       </p>
 
       <ContactCard
