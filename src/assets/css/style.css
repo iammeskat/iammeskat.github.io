@@ -1003,10 +1003,6 @@ section {
   height: 1rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-6 {
   height: 1.5rem;
 }
@@ -1021,6 +1017,10 @@ section {
 
 .h-40 {
   height: 10rem;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-\[9rem\] {
@@ -1089,6 +1089,10 @@ section {
 
 .max-w-\[15rem\] {
   max-width: 15rem;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 @-webkit-keyframes spin {
@@ -1313,6 +1317,11 @@ section {
 .bg-teal-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .p-1\.5 {

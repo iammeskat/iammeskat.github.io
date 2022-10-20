@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+  .sub-group:hover .sub-group-hover\:block {
+    /* display: block; */
+    width: 10rem;
+  }
 }
 @layer components {
   /* .themes {
