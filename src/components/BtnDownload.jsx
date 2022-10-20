@@ -9,12 +9,12 @@ const BtnDownload = () => {
       rel="noreferrer"
     >
       <span className="pl-2">Download CV</span>
-      <div className="w-9 h-9 rounded-full flex items-center justify-center bg-white">
+      <div className="w-9 h-9 rounded-full flex items-center justify-center bg-white ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="w-5 h-5 primary-color"
+          className="w-5 h-5 primary-color animate-bounce -mb-0.5"
         >
           <path
             fillRule="evenodd"
