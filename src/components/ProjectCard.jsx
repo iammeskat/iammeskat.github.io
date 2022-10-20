@@ -5,7 +5,7 @@ const ProjectCard = (props) => {
   const { title, description, tools, img, github, live } = props;
   return (
     <div className="group flex flex-col p-5 bg-[#1a1a1a] rounded-md space-y-4">
-      <div className="rounded-md overflow-hidden  aspect-[3/2] drop-shadow-t bg-black">
+      <div className="rounded-md overflow-hidden  !aspect-[3/2] bg-black ">
         <img
           className="group-hover:scale-125 w-full min-h-full transition-all duration-300"
           src={`./images/${img}`}

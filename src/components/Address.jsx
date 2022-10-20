@@ -22,7 +22,7 @@ const Address = () => {
       <ContactCard
         title="Email"
         icon={<IconEnvelop />}
-        data="meskatcse@gmail.com"
+        data="meskatcse@gmail.com meskat@live.com"
         type="email"
       />
       <ContactCard
