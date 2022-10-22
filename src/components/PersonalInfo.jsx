@@ -8,14 +8,21 @@ const PersonalInfo = () => {
       <div className="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 md:font-medium text-lg">
         <ul className="space-y-2 md:space-y-4">
           <li>
-            <span className="font-thin text-gray-400">Name:</span> Meskatul
-            Islam
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Name:
+            </span>{" "}
+            Meskatul Islam
           </li>
           <li>
-            <span className="font-thin text-gray-400">Age:</span> 24
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Age:
+            </span>{" "}
+            24
           </li>
           <li>
-            <span className="font-thin text-gray-400">Email:</span>{" "}
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Email:
+            </span>{" "}
             <a
               className="hover:primary-color"
               href="mailto:meskatcse@gmail.com"
@@ -24,25 +31,36 @@ const PersonalInfo = () => {
             </a>
           </li>
           <li>
-            <span className="font-thin text-gray-400">Address:</span>{" "}
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Address:
+            </span>{" "}
             Chattogram, Bangladesh
           </li>
         </ul>
         <ul className="space-y-2 md:space-y-4">
           <li>
-            <span className="font-thin text-gray-400">Freelance:</span>{" "}
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Freelance:
+            </span>{" "}
             Available
           </li>
           <li>
-            <span className="font-thin text-gray-400">Skills:</span> Backend &
-            Web Frontend
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Skills:
+            </span>{" "}
+            Backend & Web Frontend
           </li>
           <li>
-            <span className="font-thin text-gray-400">Experience:</span> 2 Years
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Experience:
+            </span>{" "}
+            2 Years
           </li>
           <li>
-            <span className="font-thin text-gray-400">Language:</span> Bangla &
-            English
+            <span className="font-thin text-slate-600 dark:text-slate-400">
+              Language:
+            </span>{" "}
+            Bangla & English
           </li>
         </ul>
       </div>

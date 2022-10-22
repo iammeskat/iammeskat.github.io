@@ -19,15 +19,19 @@
   }
 
   html::-webkit-scrollbar-track {
-    @apply bg-black;
+    @apply bg-white dark:bg-black;
   }
-
-  html::-webkit-scrollbar-thumb {
-    @apply primary-bg rounded-3xl;
+  .scrollbar-border-light {
+    border: 2px solid white;
+  }
+  .scrollbar-border-dark {
     border: 2px solid black;
   }
-  body {
-    @apply min-h-screen bg-[#0d0d0d] text-slate-50;
+  html::-webkit-scrollbar-thumb {
+    @apply primary-bg rounded-3xl scrollbar-border-light dark:scrollbar-border-dark;
+  }
+  .app {
+    @apply min-h-screen bg-slate-50 dark:bg-[#0d0d0d] text-slate-800 dark:text-slate-50;
   }
   main {
     @apply container mx-auto pb-12 md:pb-20;
@@ -37,28 +41,28 @@
     @apply space-y-12 md:space-y-20 pt-12 md:pt-20;
   }
   .home-parent {
-    @apply -mt-[48px] pt-[48px] md:-mt-[52px] md:pt-[52px] border-y border-[#0d0d0d];
+    @apply -mt-[48px] pt-[48px] md:-mt-[52px] md:pt-[52px] border-y border-slate-50 dark:border-[#0d0d0d];
   }
   .home {
-    @apply w-full min-h-[calc(100vh-82px)] md:min-h-[calc(100vh-92px)] rounded-2xl my-4 md:my-5 p-4 md:p-10 bg-[#141313] flex flex-col lg:flex-row justify-center items-center space-y-4 md:space-y-8 lg:space-y-0 lg:space-x-10 xl:space-x-14;
+    @apply w-full min-h-[calc(100vh-82px)] md:min-h-[calc(100vh-92px)] rounded-2xl my-4 md:my-5 p-4 md:p-10 bg-light dark:bg-[#141313] flex flex-col lg:flex-row justify-center items-center space-y-4 md:space-y-8 lg:space-y-0 lg:space-x-10 xl:space-x-14;
   }
   .home .img {
     @apply max-w-[200px] md:max-w-[400px] 2xl:max-w-[420px] flex justify-center items-center;
   }
   .home .img img {
-    @apply w-full rounded-xl  bg-gray-900;
+    @apply w-full rounded-xl  bg-slate-100 dark:bg-gray-900;
   }
   .home .about {
     @apply flex flex-col justify-center items-center lg:items-start space-y-2 md:space-y-3;
   }
   .input-field {
-    @apply w-full py-3 px-4 rounded focus:outline-0 bg-[#1a1a1a];
+    @apply w-full py-3 px-4 rounded focus:outline-0 bg-light dark:bg-[#1a1a1a];
   }
   .content {
     @apply space-y-6 md:space-y-10;
   }
   .active {
-    @apply primary-color hover:text-white bg-gray-900;
+    @apply primary-color hover:text-white bg-slate-100 dark:bg-gray-900;
   }
 
   .primary-color {
@@ -66,5 +70,8 @@
   }
   .primary-bg {
     @apply bg-green-500;
+  }
+  .bg-light {
+    @apply bg-slate-200;
   }
 }

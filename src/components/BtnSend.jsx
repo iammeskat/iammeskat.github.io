@@ -9,7 +9,7 @@ const BtnSend = (props) => {
         status !== 3
           ? "primary-bg w-[10.5rem] hover:w-[11rem]"
           : "bg-yellow-500 w-[11.5rem] hover:w-[12rem]"
-      } rounded-full  p-1.5  transition-all duration-300 group`}
+      } rounded-full  p-1.5  transition-all duration-300 group text-slate-50`}
     >
       <span className={`pl-2 `}>
         {status === 0

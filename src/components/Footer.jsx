@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import MyLogo from "./icons/MyLogo";
 const Footer = () => {
   return (
-    <footer className="flex flex-col mspace-x-2 justify-center items-center bg-[#1a1a1a] p-2 text-gray-800m text-slate-400 text-xs">
+    <footer className="flex flex-col mspace-x-2 justify-center items-center bg-light dark:bg-[#1a1a1a] p-2 text-gray-800m text-slate-600 dark:text-slate-400 text-xs">
       <div className="w-16 md:w-24 h-auto">
         <MyLogo />
       </div>

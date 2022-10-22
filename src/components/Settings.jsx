@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Settings = () => {
+const Settings = (props) => {
   const [theme, setTheme] = useState({
     color: "text-green-500",
     bg: "bg-green-500",
@@ -66,9 +66,10 @@ const Settings = () => {
     }
     setTheme(tempTheme);
   };
+  const setDarkMode = () => {};
   return (
     <div className="container mx-auto flex justify-end">
-      <div className="absolute  w-60 rounded overflow-hidden bg-[#1a1a1a] mt-1 p-2 shadow">
+      <div className="absolute  w-60 rounded overflow-hidden bg-light dark:bg-[#1a1a1a] mt-1 p-2 shadow">
         <div className="flex items-center justify-center  font-medium space-x-1 bg-blackm mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,11 +86,21 @@ const Settings = () => {
           </svg>
           <h2>Themes</h2>
         </div>
-        <div className="flex justify-between bg-[#0d0d0d] px-2 py-0.5 rounded-sm text-sm font-medium mb-2">
-          <label htmlFor="dark-mode ">Dark theme:</label>
-          <input type="checkbox" name="" id="dark-mode" />
+        <div className="flex justify-between items-center bg-slate-100 dark:bg-[#0d0d0d] px-2 py-0.5 rounded-sm text-sm font-medium mb-2">
+          <label htmlFor="dark-mode ">Dark Mode:</label>
+          <button
+            className={`flex ${
+              props.isDark ? "justify-end" : "justify-start"
+            } items-center w-14 h-6 px-1 rounded-full dark:bg-light bg-black transition-all duration-300`}
+            onClick={props.setDarkMode}
+            type="checkbox"
+            name=""
+            id="dark-mode"
+          >
+            <div className="w-4 h-4 primary-bg rounded-full transition-all duration-300"></div>
+          </button>
         </div>
-        <div className="bg-[#0d0d0d] px-2 py-0.5 rounded-sm text-sm font-medium">
+        <div className="bg-slate-100 dark:bg-[#0d0d0d] px-2 py-0.5 rounded-sm text-sm font-medium">
           <p className="mb-2">Colors:</p>
           <div className="grid grid-cols-6 gap-2 pb-2">
             <button

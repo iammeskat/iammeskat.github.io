@@ -1,13 +1,14 @@
 // import { useState } from "react";
+import { useState } from "react";
 import { navItems } from "../data/navItems";
-// import BtnSetting from "./BtnSetting";
+import BtnSetting from "./BtnSetting";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
-// import Settings from "./Settings";
+import Settings from "./Settings";
 const Header = (props) => {
-  // const [showSetting, setShowSetting] = useState(false);
+  const [showSetting, setShowSetting] = useState(false);
   return (
-    <header className="sticky top-0 z-20 backdrop-blur-xl  bg-[#1a1a1a]/90 shadow">
+    <header className="sticky top-0 z-20 backdrop-blur-xl bg-slate-200/70  dark:bg-[#1a1a1a]/80 shadow">
       <nav className="container mx-auto flex justify-between items-center text-lg">
         <Logo />
         <ul className="flex items-center  uppercasem ">
@@ -21,10 +22,12 @@ const Header = (props) => {
               />
             );
           })}
-          {/* <BtnSetting onClickHandler={() => setShowSetting(!showSetting)} /> */}
+          <BtnSetting onClickHandler={() => setShowSetting(!showSetting)} />
         </ul>
       </nav>
-      {/* {showSetting && <Settings setColor={props.setColor} />} */}
+      {showSetting && (
+        <Settings isDark={props.isDark} setDarkMode={props.setDarkMode} />
+      )}
     </header>
   );
 };

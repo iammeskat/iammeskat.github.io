@@ -9,17 +9,20 @@ const ContactCard = (props) => {
         <h2 className="font-bold text-2xl">{title}:</h2>
         {type === "email" ? (
           <a
-            className="text-gray-400 hover:primary-color"
+            className="text-slate-600 dark:text-slate-400 hover:primary-color"
             href={`mailto:${data}`}
           >
             {data}
           </a>
         ) : type === "phone" ? (
-          <a href={`tel:${data}`} className="text-gray-400 hover:primary-color">
+          <a
+            href={`tel:${data}`}
+            className="text-slate-600 dark:text-slate-400 hover:primary-color"
+          >
             {data}
           </a>
         ) : (
-          <p className="text-gray-400">{data}</p>
+          <p className="text-slate-600 dark:text-slate-400">{data}</p>
         )}
       </div>
     </div>
