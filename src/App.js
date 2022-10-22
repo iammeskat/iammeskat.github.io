@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 function App() {
-const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [darkMode, setDarkMode] = useState(isDarkMode)
   
   

@@ -1,8 +1,0 @@
-.primary-color {
-  --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
-}
-.primary-bg {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
-}
