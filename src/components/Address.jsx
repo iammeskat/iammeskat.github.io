@@ -22,13 +22,13 @@ const Address = () => {
       <ContactCard
         title="Email"
         icon={<IconEnvelop />}
-        data="meskatcse@gmail.com meskat@live.com"
+        data={["meskatcse@gmail.com", "meskat@live.com"]}
         type="email"
       />
       <ContactCard
         title="Phone"
         icon={<IconCall />}
-        data="+880 1754-6587**"
+        data={["+880 1754-6587**"]}
         type="phone"
       />
 

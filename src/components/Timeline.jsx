@@ -5,7 +5,7 @@ import Headline from "./Headline";
 import History from "./History";
 
 const Timeline = () => {
-  const [count, setCount] = useState(4);
+  const [count, setCount] = useState(6);
   const getData = () => {
     if (timelineData.length > count) {
       return timelineData.slice(0, count);

@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import { workData } from "../data/workData";
 
 const Portfolio = () => {
-  const [count, setCount] = useState(3);
+  const [count, setCount] = useState(6);
   const getData = () => {
     if (workData.length > count) {
       return workData.slice(0, count);
@@ -23,7 +23,7 @@ const Portfolio = () => {
       <div className="content">
         <Headline titlePart1="my" titlePart2="work" reverse={true} />
         <div className="space-y-4">
-          <p className="text-center text-gray-400">
+          <p className="text-center text-slate-600 dark:text-slate-400">
             [ Due to privacy concerns, my professional projects are not listed.
             ]
           </p>

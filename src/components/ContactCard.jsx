@@ -2,25 +2,38 @@ const ContactCard = (props) => {
   const { title, data, icon, type } = props;
   return (
     <div className="flex space-x-4">
-      {/* <img className="w-10 h-10" src={`/images/${icon}`} alt="" /> */}
       {icon}
 
       <div className="space-y-2 max-w-[15rem]">
         <h2 className="font-bold text-2xl">{title}:</h2>
         {type === "email" ? (
-          <a
-            className="text-slate-600 dark:text-slate-400 hover:primary-color"
-            href={`mailto:${data}`}
-          >
-            {data}
-          </a>
+          <div className="flex flex-col">
+            {data.map((item, indx) => {
+              return (
+                <a
+                  key={indx}
+                  className="text-slate-600 dark:text-slate-400 hover:primary-color"
+                  href={`mailto:${item}`}
+                >
+                  {item}
+                </a>
+              );
+            })}
+          </div>
         ) : type === "phone" ? (
-          <a
-            href={`tel:${data}`}
-            className="text-slate-600 dark:text-slate-400 hover:primary-color"
-          >
-            {data}
-          </a>
+          <div className="flex flex-col">
+            {data.map((item, indx) => {
+              return (
+                <a
+                  key={indx}
+                  className="text-slate-600 dark:text-slate-400 hover:primary-color"
+                  href={`tel:${data}`}
+                >
+                  {item}
+                </a>
+              );
+            })}
+          </div>
         ) : (
           <p className="text-slate-600 dark:text-slate-400">{data}</p>
         )}
