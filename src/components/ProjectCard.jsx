@@ -14,8 +14,8 @@ const ProjectCard = (props) => {
       </div>
       <div className="grow w-full flex flex-col justify-between  space-y-2">
         <div className="w-full flex flex-col items-center space-y-2">
-          <h2 className="text-xl text-center">{title}</h2>
-          <div>
+          <h2 className="text-lg md:text-xl text-center">{title}</h2>
+          <div className="text-sm md:text-base">
             <p className="text-center text-gray-400">{description}</p>
             <p className="text-center text-gray-400">
               <span className="font-medium">Platform/Technology</span>: {tools}

@@ -8,7 +8,7 @@ const Header = (props) => {
   // const [showSetting, setShowSetting] = useState(false);
   return (
     <header className="sticky top-0 z-20 backdrop-blur-xl  bg-[#1a1a1a]/90 shadow">
-      <nav className="container mx-auto flex justify-between items-center text-white text-lg">
+      <nav className="container mx-auto flex justify-between items-center text-lg">
         <Logo />
         <ul className="flex items-center  uppercasem ">
           {navItems.map((item, indx) => {

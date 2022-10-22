@@ -11,8 +11,8 @@ const History = (props) => {
         </div>
       </div>
       <div className="ml-9 py-2 space-y-1">
-        <h2 className="text-xl">{title}</h2>
-        <p className="text-gray-400">{description}</p>
+        <h2 className="text-lg md:text-xl">{title}</h2>
+        <p className="text-gray-400 text-sm md:text-base">{description}</p>
       </div>
       <div className="absolute bottom-0 -ml-[0.6rem]    w-4 h-4 rounded-full primary-bg"></div>
     </div>
