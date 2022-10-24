@@ -1,9 +1,9 @@
-import { generalData } from "../data/generalData";
+import { personalData } from "../data/personalData";
 
 const BtnDownload = () => {
   return (
     <a
-      href={generalData.cvLink}
+      href={personalData.cvLink}
       target="_blank"
       className="flex items-center justify-between space-x-1 primary-bg dark:dark-primary-bg rounded-full w-[10rem] p-1.5 hover:w-[11rem] transition-all duration-300"
       rel="noreferrer"

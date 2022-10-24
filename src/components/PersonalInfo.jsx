@@ -1,6 +1,17 @@
+import { personalData } from "../data/personalData";
 import BtnDownload from "./BtnDownload";
 
 const PersonalInfo = () => {
+  const {
+    name,
+    age,
+    emails,
+    shortAddress,
+    freelance,
+    skills,
+    yearOfExperience,
+    languages,
+  } = personalData;
   return (
     <div className="space-y-3 md:space-y-6">
       <h2 className="font-bold text-xl md:text-3xl uppercase">personal info</h2>
@@ -11,13 +22,13 @@ const PersonalInfo = () => {
             <span className="font-thin text-slate-600 dark:text-slate-400">
               Name:
             </span>{" "}
-            Meskatul Islam
+            {name}
           </li>
           <li>
             <span className="font-thin text-slate-600 dark:text-slate-400">
               Age:
             </span>{" "}
-            24
+            {age}
           </li>
           <li>
             <span className="font-thin text-slate-600 dark:text-slate-400">
@@ -25,16 +36,16 @@ const PersonalInfo = () => {
             </span>{" "}
             <a
               className="hover:primary-text dark:hover:dark-primary-text"
-              href="mailto:meskatcse@gmail.com"
+              href={`mailto:${emails[0]}`}
             >
-              meskatcse@gmail.com
+              {emails[0]}
             </a>
           </li>
           <li>
             <span className="font-thin text-slate-600 dark:text-slate-400">
               Address:
             </span>{" "}
-            Chattogram, Bangladesh
+            {shortAddress}
           </li>
         </ul>
         <ul className="space-y-2 md:space-y-4">
@@ -42,25 +53,25 @@ const PersonalInfo = () => {
             <span className="font-thin text-slate-600 dark:text-slate-400">
               Freelance:
             </span>{" "}
-            Available
+            {freelance}
           </li>
           <li>
             <span className="font-thin text-slate-600 dark:text-slate-400">
               Skills:
             </span>{" "}
-            Backend & Web Frontend
+            {skills}
           </li>
           <li>
             <span className="font-thin text-slate-600 dark:text-slate-400">
               Experience:
             </span>{" "}
-            2 Years
+            {yearOfExperience[0] + " Years"}
           </li>
           <li>
             <span className="font-thin text-slate-600 dark:text-slate-400">
               Language:
             </span>{" "}
-            Bangla & English
+            {languages}
           </li>
         </ul>
       </div>

@@ -27,7 +27,7 @@ const ContactCard = (props) => {
                 <a
                   key={indx}
                   className="text-slate-600 dark:text-slate-400 hover:primary-text dark:hover:dark-primary-text"
-                  href={`tel:${data}`}
+                  href={`tel:${item}`}
                 >
                   {item}
                 </a>

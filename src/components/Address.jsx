@@ -1,3 +1,4 @@
+import { personalData } from "../data/personalData";
 import ContactCard from "./ContactCard";
 import IconCall from "./icons/IconCall";
 import IconEnvelop from "./icons/IconEnvelop";
@@ -5,6 +6,7 @@ import IconMap from "./icons/IconMap";
 import SocialLinks from "./SocialLinks";
 
 const Address = () => {
+  const { address, emails, phones } = personalData;
   return (
     <div className="space-y-6">
       <p className="text-slate-600 dark:text-slate-400">
@@ -16,19 +18,19 @@ const Address = () => {
       <ContactCard
         title="Address"
         icon={<IconMap />}
-        data="Shovandandi-4370, Patiya, Chattogram, Bangladesh"
+        data={address}
         type="text"
       />
       <ContactCard
         title="Email"
         icon={<IconEnvelop />}
-        data={["meskatcse@gmail.com", "meskat@live.com"]}
+        data={emails}
         type="email"
       />
       <ContactCard
         title="Phone"
         icon={<IconCall />}
-        data={["+880 1754-6587**"]}
+        data={phones}
         type="phone"
       />
 
