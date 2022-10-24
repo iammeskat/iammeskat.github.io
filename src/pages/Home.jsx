@@ -12,7 +12,7 @@ const Home = () => {
           <h2 className="font-bold text-4xl md:text-6xl truncate">
             Meskatul Islam
           </h2>
-          <p className="text-center lg:text-left font-medium text-xl md:text-2xl primary-color">
+          <p className="text-center lg:text-left font-medium text-xl md:text-2xl primary-text dark:dark-primary-text">
             Software Engineer | Programmer
           </p>
           <p className="text-center w-full lg:max-w-[35rem] lg:text-left text-sm md:text-base">

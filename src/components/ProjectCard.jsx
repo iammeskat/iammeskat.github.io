@@ -26,7 +26,7 @@ const ProjectCard = (props) => {
           {github && (
             <a
               href={github}
-              className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
+              className="flex items-center justify-between space-x-1 primary-bg dark:dark-primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
             >
               <span className="pl-1 text-slate-50">Github</span>
               <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">
@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
           {live && (
             <a
               href={live}
-              className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
+              className="flex items-center justify-between space-x-1 primary-bg dark:dark-primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
             >
               <span className="pl-1 text-slate-50">Live link</span>
               <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">

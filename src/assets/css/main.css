@@ -28,7 +28,7 @@
     border: 2px solid black;
   }
   html::-webkit-scrollbar-thumb {
-    @apply primary-bg rounded-3xl scrollbar-border-light dark:scrollbar-border-dark;
+    @apply primary-bg dark:dark-primary-bg rounded-3xl scrollbar-border-light dark:scrollbar-border-dark;
   }
   .app {
     @apply min-h-screen bg-slate-50 dark:bg-[#0d0d0d] text-slate-800 dark:text-slate-50;
@@ -62,14 +62,20 @@
     @apply space-y-6 md:space-y-10;
   }
   .active {
-    @apply primary-color hover:text-slate-800 dark:hover:text-white bg-slate-100 dark:bg-gray-900;
+    @apply primary-text dark:dark-primary-text hover:text-slate-800 dark:hover:text-white bg-slate-100 dark:bg-gray-900;
   }
 
-  .primary-color {
+  .primary-text {
     @apply text-blue-600;
+  }
+  .dark-primary-text {
+    @apply text-green-500;
   }
   .primary-bg {
     @apply bg-blue-600;
+  }
+  .dark-primary-bg {
+    @apply bg-green-500;
   }
   .bg-light {
     @apply bg-slate-200;

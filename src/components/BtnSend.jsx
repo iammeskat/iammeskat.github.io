@@ -7,7 +7,7 @@ const BtnSend = (props) => {
       type="submit"
       className={`flex items-center justify-between space-x-1 ${
         status !== 3
-          ? "primary-bg w-[10.5rem] hover:w-[11rem]"
+          ? "primary-bg dark:dark-primary-bg w-[10.5rem] hover:w-[11rem]"
           : "bg-yellow-500 w-[11.5rem] hover:w-[12rem]"
       } rounded-full  p-1.5  transition-all duration-300 group text-slate-50`}
     >

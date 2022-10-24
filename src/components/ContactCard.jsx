@@ -12,7 +12,7 @@ const ContactCard = (props) => {
               return (
                 <a
                   key={indx}
-                  className="text-slate-600 dark:text-slate-400 hover:primary-color"
+                  className="text-slate-600 dark:text-slate-400 hover:primary-text dark:hover:dark-primary-text"
                   href={`mailto:${item}`}
                 >
                   {item}
@@ -26,7 +26,7 @@ const ContactCard = (props) => {
               return (
                 <a
                   key={indx}
-                  className="text-slate-600 dark:text-slate-400 hover:primary-color"
+                  className="text-slate-600 dark:text-slate-400 hover:primary-text dark:hover:dark-primary-text"
                   href={`tel:${data}`}
                 >
                   {item}

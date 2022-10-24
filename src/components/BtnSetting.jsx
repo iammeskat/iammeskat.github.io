@@ -4,7 +4,7 @@ const BtnSetting = (props) => {
   return (
     <button
       onClick={props.onClickHandler}
-      className="group ml-1 flex items-center justify-center  hover:primary-bg p-2 rounded-full"
+      className="group ml-1 flex items-center justify-center  hover:primary-bg dark:dark-primary-bg p-2 rounded-full"
     >
       <IconCog />
     </button>

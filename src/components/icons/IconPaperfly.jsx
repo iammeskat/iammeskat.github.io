@@ -1,7 +1,7 @@
 const IconPaperfly = () => {
   return (
     <svg
-      className="w- h-5 primary-color"
+      className="w- h-5 primary-text dark:dark-primary-text"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"

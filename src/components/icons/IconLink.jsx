@@ -1,7 +1,7 @@
 const IconLink = () => {
   return (
     <svg
-      className="w-4 h-4 primary-color"
+      className="w-4 h-4 primary-text dark:dark-primary-text"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"

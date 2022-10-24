@@ -624,6 +624,8 @@ html::-webkit-scrollbar-thumb {
 
 .dark html::-webkit-scrollbar-thumb {
   border: 2px solid black;
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 .app {
@@ -915,6 +917,8 @@ section {
 }
 
 .dark .active {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
@@ -924,7 +928,7 @@ section {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.primary-color {
+.primary-text {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
@@ -990,6 +994,10 @@ section {
   margin-left: 0.25rem;
 }
 
+.\!mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
 .-ml-\[1\.35rem\] {
   margin-left: -1.35rem;
 }
@@ -1024,14 +1032,6 @@ section {
 
 .-mt-0 {
   margin-top: -0px;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.\!mb-1 {
-  margin-bottom: 0.25rem !important;
 }
 
 .flex {
@@ -1122,6 +1122,10 @@ section {
   width: 11.5rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -1136,10 +1140,6 @@ section {
 
 .w-24 {
   width: 6rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-\[7rem\] {
@@ -1486,6 +1486,11 @@ section {
   padding-right: 2.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1519,11 +1524,6 @@ section {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pl-2 {
@@ -1698,7 +1698,7 @@ section {
   transition-duration: 500ms;
 }
 
-.hover\:primary-color:hover {
+.hover\:primary-text:hover {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
@@ -1767,6 +1767,16 @@ section {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dark .dark\:dark-primary-text {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.dark .dark\:dark-primary-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
@@ -1796,9 +1806,24 @@ section {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+.dark .dark\:hover\:dark-primary-text:hover {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
 .dark .dark\:hover\:primary-bg:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:hover\:dark-primary-bg:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.dark .hover\:dark\:dark-primary-bg:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:hover\:bg-black:hover {
@@ -1809,6 +1834,11 @@ section {
 .dark .dark\:hover\:bg-gray-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dark .group:hover .dark\:group-hover\:text-white {

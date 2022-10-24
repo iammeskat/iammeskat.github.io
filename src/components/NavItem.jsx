@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 const NavItem = (props) => {
   const { title, to } = props;
   return (
-    <li className="group hover:primary-bg transition-all duration-300 cursor-pointer">
+    <li className="group hover:primary-bg dark:hover:dark-primary-bg transition-all duration-300 cursor-pointer">
       <Link
         activeClass="active"
         spy

@@ -24,7 +24,7 @@ const PersonalInfo = () => {
               Email:
             </span>{" "}
             <a
-              className="hover:primary-color"
+              className="hover:primary-text dark:hover:dark-primary-text"
               href="mailto:meskatcse@gmail.com"
             >
               meskatcse@gmail.com

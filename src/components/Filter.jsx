@@ -7,7 +7,9 @@ const Filter = (props) => {
           <button
             onClick={() => onClickHandler(item.type)}
             className={`bg-light dark:bg-[#1a1a1a] px-6 rounded-full ${
-              filterType === item.type ? "primary-color" : "hover:primary-color"
+              filterType === item.type
+                ? "primary-text dark:dark-primary-text"
+                : "hover:primary-text dark:hover:dark-primary-text"
             } !mb-1`}
           >
             {item.title}

@@ -3,7 +3,7 @@ const History = (props) => {
   return (
     <div className="mx-5 border-l-2 border-slate-400 pb-10 relative">
       <div className="-ml-[1.35rem] -mt-5 flex items-center space-x-4">
-        <div className="w-10 h-10 rounded-full primary-bg flex items-center justify-center">
+        <div className="w-10 h-10 rounded-full primary-bg dark:dark-primary-bg flex items-center justify-center">
           <img className="w-5 h-5" src="./images/academicCap.svg" alt="" />
         </div>
         <div className="rounded-full bg-light dark:bg-[#1a1a1a] py-1 px-3">
@@ -16,7 +16,7 @@ const History = (props) => {
           {description}
         </p>
       </div>
-      <div className="absolute bottom-0 -ml-[0.6rem]    w-4 h-4 rounded-full primary-bg"></div>
+      <div className="absolute bottom-0 -ml-[0.6rem]    w-4 h-4 rounded-full primary-bg dark:dark-primary-bg"></div>
     </div>
   );
 };

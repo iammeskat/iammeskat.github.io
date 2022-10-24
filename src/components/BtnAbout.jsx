@@ -6,7 +6,7 @@ const BtnAbout = () => {
       activeClass="active"
       to="about"
       spy
-      className="flex items-center justify-between space-x-1 primary-bg rounded-full w-[9rem] p-1.5 hover:w-[10rem] transition-all duration-300 cursor-pointer"
+      className="flex items-center justify-between space-x-1 primary-bg dark:dark-primary-bg rounded-full w-[9rem] p-1.5 hover:w-[10rem] transition-all duration-300 cursor-pointer"
     >
       <span className="pl-2 text-white">About Me</span>
       <div className="w-9 h-9 rounded-full flex items-center justify-center bg-white">
@@ -14,7 +14,7 @@ const BtnAbout = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="w-5 h-5 primary-color"
+          className="w-5 h-5 primary-text dark:dark-primary-text"
         >
           <path
             fillRule="evenodd"

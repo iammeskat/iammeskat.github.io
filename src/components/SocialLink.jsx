@@ -4,7 +4,7 @@ const SocialLink = (props) => {
     <a
       href={url}
       target="_blank"
-      className="group flex items-center rounded-full bg-slate-300 dark:bg-[#1a1a1a] hover:primary-bg dark:hover:primary-bg transition-all duration-300"
+      className="group flex items-center rounded-full bg-slate-300 dark:bg-[#1a1a1a] hover:primary-bg dark:dark-primary-bg dark:hover:primary-bg hover:dark:dark-primary-bg transition-all duration-300"
       rel="noreferrer"
     >
       <div href={url} className="w-10 h-10 flex items-center justify-center ">

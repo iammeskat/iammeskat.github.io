@@ -97,7 +97,7 @@ const Settings = (props) => {
             name=""
             id="dark-mode"
           >
-            <div className="w-4 h-4 primary-bg rounded-full transition-all duration-300"></div>
+            <div className="w-4 h-4 primary-bg dark:dark-primary-bg rounded-full transition-all duration-300"></div>
           </button>
         </div>
         <div className="bg-slate-100 dark:bg-[#0d0d0d] px-2 py-0.5 rounded-sm text-sm font-medium">

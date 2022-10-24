@@ -1,7 +1,7 @@
 const IconCall = () => {
   return (
     <svg
-      className="w-10 h-10 primary-color"
+      className="w-10 h-10 primary-text dark:dark-primary-text"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
