@@ -50,7 +50,7 @@
     @apply max-w-[200px] md:max-w-[400px] 2xl:max-w-[420px] flex justify-center items-center;
   }
   .home .img img {
-    @apply w-full rounded-xl  bg-slate-100 dark:bg-gray-900;
+    @apply w-full rounded-full  bg-slate-100 dark:bg-gray-900;
   }
   .home .about {
     @apply flex flex-col justify-center items-center lg:items-start space-y-2 md:space-y-3;

@@ -4,7 +4,7 @@ export const personalData = {
     dob: "",
     tagline: "Software Engineer | Programmer",
     description: "Hello, I’m a full stack web developer from Bangladesh. I have experience in web development, design, and customization. Also, I am good at database designing and software requirements analysis.",
-    img: "./images/me.png",
+    img: "./images/mesq.jpg",
     emails: ["meskatcse@gmail.com", "meskat@live.com"],
     phones: ["+880 1754-65**81"],
     address: "Shovandandi-4370, Patiya, Chattogram, Bangladesh",

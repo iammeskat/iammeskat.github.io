@@ -833,7 +833,7 @@ section {
 
 .home .img img {
   width: 100%;
-  border-radius: 0.75rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
