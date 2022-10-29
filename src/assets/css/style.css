@@ -1597,6 +1597,10 @@ section {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));

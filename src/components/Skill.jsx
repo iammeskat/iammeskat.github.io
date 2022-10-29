@@ -23,6 +23,13 @@ const Skill = () => {
     setData(filteredData);
     setFilterType(type);
   };
+  const cats = [
+    ...new Set(
+      skillsData.map((item) => {
+        return item.type;
+      })
+    ),
+  ];
 
   const getData = () => {
     if (data.length > count) {
@@ -44,13 +51,7 @@ const Skill = () => {
         <Filter
           filterType={filterType}
           onClickHandler={getFilteredData}
-          filterOptions={[
-            { type: "all", title: "All" },
-            { type: "language", title: "Language" },
-            { type: "framework", title: "Framework" },
-            { type: "database", title: "Database" },
-            { type: "tools", title: "Tools & Others" },
-          ]}
+          filterOptions={cats}
         />
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {getData().map((skill, indx) => {
