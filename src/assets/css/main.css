@@ -19,10 +19,10 @@
   }
 
   html::-webkit-scrollbar-track {
-    @apply bg-white dark:bg-black;
+    @apply bg-gray-600 dark:bg-black;
   }
   .scrollbar-border-light {
-    border: 2px solid white;
+    border: 2px solid rgb(75 85 99 / var(--tw-bg-opacity));
   }
   .scrollbar-border-dark {
     border: 2px solid black;

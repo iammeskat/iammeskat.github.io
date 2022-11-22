@@ -607,7 +607,7 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-track {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .dark html::-webkit-scrollbar-track {
@@ -616,7 +616,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  border: 2px solid white;
+  border: 2px solid rgb(75 85 99 / var(--tw-bg-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
   border-radius: 1.5rem;
