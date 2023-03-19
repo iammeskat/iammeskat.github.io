@@ -1,5 +1,10 @@
+import { track } from "mixpanel-browser";
+
 const ContactCard = (props) => {
   const { title, data, icon, type } = props;
+  const onTrack = (data) => {
+    track("contact", data);
+  };
   return (
     <div className="flex space-x-4">
       {icon}
@@ -12,6 +17,12 @@ const ContactCard = (props) => {
               return (
                 <a
                   key={indx}
+                  onClick={() =>
+                    onTrack({
+                      type: "mail",
+                      name: item,
+                    })
+                  }
                   className="text-slate-600 dark:text-slate-400 hover:primary-text dark:hover:dark-primary-text"
                   href={`mailto:${item}`}
                 >
@@ -26,6 +37,12 @@ const ContactCard = (props) => {
               return (
                 <a
                   key={indx}
+                  onClick={() =>
+                    onTrack({
+                      type: "phone",
+                      name: item,
+                    })
+                  }
                   className="text-slate-600 dark:text-slate-400 hover:primary-text dark:hover:dark-primary-text"
                   href={`tel:${item}`}
                 >

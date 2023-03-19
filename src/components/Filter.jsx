@@ -1,10 +1,19 @@
+import { track } from "../service/mixpanel";
+
 const Filter = (props) => {
   const { filterOptions, filterType, onClickHandler } = props;
   // filterOptions.push("all");
   return (
     <div className="w-full flex flex-wrap justify-center space-x-1 ">
       <button
-        onClick={() => onClickHandler("all")}
+        onClick={() => {
+          onClickHandler("all");
+          track("click", {
+            type: "skill-button",
+            name: "all",
+            url: "",
+          });
+        }}
         className={`bg-light dark:bg-[#1a1a1a] px-6 rounded-full ${
           filterType === "all"
             ? "primary-text dark:dark-primary-text"
@@ -17,7 +26,14 @@ const Filter = (props) => {
         return (
           <button
             key={indx}
-            onClick={() => onClickHandler(item)}
+            onClick={() => {
+              onClickHandler(item);
+              track("click", {
+                type: "skill-button",
+                name: item,
+                url: "",
+              });
+            }}
             className={`bg-light dark:bg-[#1a1a1a] px-6 rounded-full ${
               filterType === item
                 ? "primary-text dark:dark-primary-text"

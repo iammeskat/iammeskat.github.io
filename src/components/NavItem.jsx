@@ -1,9 +1,19 @@
+import { track } from "mixpanel-browser";
 import { Link } from "react-scroll";
 
 const NavItem = (props) => {
   const { title, to } = props;
   return (
-    <li className="group hover:primary-bg dark:hover:dark-primary-bg transition-all duration-300 cursor-pointer">
+    <li
+      className="group hover:primary-bg dark:hover:dark-primary-bg transition-all duration-300 cursor-pointer"
+      onClick={() =>
+        track("click", {
+          type: "nav-item",
+          name: title,
+          url: to,
+        })
+      }
+    >
       <Link
         activeClass="active"
         spy

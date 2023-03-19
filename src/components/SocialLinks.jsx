@@ -1,4 +1,5 @@
 import { personalData } from "../data/personalData";
+import { track } from "../service/mixpanel";
 import IconFb from "./icons/IconFb";
 import IconGithub from "./icons/IconGithub";
 import IconIg from "./icons/IconIg";
@@ -8,12 +9,22 @@ import SocialLink from "./SocialLink";
 
 const SocialLinks = () => {
   const { socials } = personalData;
+  const trackOnClick = (data) => {
+    track("click", data);
+  };
   return (
     <div className="flex space-x-2">
       {socials.map((item, indx) => {
         return (
           <SocialLink
             key={indx}
+            onClick={() =>
+              trackOnClick({
+                type: "social links",
+                name: item?.title,
+                url: item?.url,
+              })
+            }
             url={item.url}
             username={item.username}
             icon={() => {
