@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import { track } from "mixpanel-browser";
 import { navItems } from "../data/navItems";
 import BtnDarkMode from "./BtnDarkMode";
 // import BtnSetting from "./BtnSetting";
@@ -24,7 +25,17 @@ const Header = (props) => {
             );
           })}
           {/* <BtnSetting onClickHandler={() => setShowSetting(!showSetting)} /> */}
-          <BtnDarkMode onClickHandler={setDarkMode} isDark={isDark} />
+          <BtnDarkMode
+            onClickHandler={() => {
+              setDarkMode();
+              track("click", {
+                type: "nav-item",
+                name: "dark-mode",
+                url: "",
+              });
+            }}
+            isDark={isDark}
+          />
         </ul>
       </nav>
       {/* {showSetting && (

@@ -1,8 +1,12 @@
+import { track } from "../service/mixpanel";
 import IconGithubLink from "./icons/IconGuthubLink";
 import IconLink from "./icons/IconLink";
 
 const ProjectCard = (props) => {
   const { title, description, tools, img, github, live } = props;
+  const onTrack = (data) => {
+    track("project", data);
+  };
   return (
     <div className="group flex flex-col p-5 bg-light dark:bg-[#1a1a1a] rounded-md space-y-4">
       <div className="rounded-md overflow-hidden  !aspect-[3/2] bg-white dark:bg-black ">
@@ -24,19 +28,32 @@ const ProjectCard = (props) => {
         </div>
         <div className="flex justify-center space-x-4">
           {github && (
-            <a
-              href={github}
-              className="flex items-center justify-between space-x-1 primary-bg dark:dark-primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
+            <div
+              onClick={() =>
+                onTrack({ projectName: title, navigatedTo: "github" })
+              }
             >
-              <span className="pl-1 text-slate-50">Github</span>
-              <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">
-                <IconGithubLink />
-              </div>
-            </a>
+              <a
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between space-x-1 primary-bg dark:dark-primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
+              >
+                <span className="pl-1 text-slate-50">Github</span>
+                <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white">
+                  <IconGithubLink />
+                </div>
+              </a>
+            </div>
           )}
           {live && (
             <a
+              onClick={() =>
+                onTrack({ projectName: title, navigatedTo: "live" })
+              }
               href={live}
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center justify-between space-x-1 primary-bg dark:dark-primary-bg rounded-full w-[7rem] p-1.5 hover:w-[8rem] transition-all duration-300"
             >
               <span className="pl-1 text-slate-50">Live link</span>

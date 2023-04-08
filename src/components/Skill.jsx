@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { skillsData } from "../data/skillsData";
+import { track } from "../service/mixpanel";
 import BtnSeeMore from "./BtnSeeMore";
 import Filter from "./Filter";
 import Headline from "./Headline";
@@ -61,7 +62,18 @@ const Skill = () => {
           })}
         </div>
         <div className="flex justify-center">
-          {data.length > count && <BtnSeeMore onClickHandler={seeMore} />}
+          {data.length > count && (
+            <BtnSeeMore
+              onClickHandler={() => {
+                seeMore();
+                track({
+                  type: "skill-button",
+                  name: "see more",
+                  url: "",
+                });
+              }}
+            />
+          )}
         </div>
       </div>
     </div>

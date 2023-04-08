@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { timelineData } from "../data/timelineData";
+import { track } from "../service/mixpanel";
 import BtnSeeMore from "./BtnSeeMore";
 import Headline from "./Headline";
 import History from "./History";
@@ -37,7 +38,16 @@ const Timeline = () => {
         </div>
         <div className="flex justify-center">
           {timelineData.length > count && (
-            <BtnSeeMore onClickHandler={seeMore} />
+            <BtnSeeMore
+              onClickHandler={() => {
+                seeMore();
+                track({
+                  type: "timeline-button",
+                  name: "see more",
+                  url: "",
+                });
+              }}
+            />
           )}
         </div>
       </div>
