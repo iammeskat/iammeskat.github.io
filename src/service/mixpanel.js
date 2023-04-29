@@ -1,6 +1,7 @@
 
 import axios from "axios";
 import mixpanel from "mixpanel-browser";
+import { countTraffic } from "./countTraffic";
 
 export const track = async (event, data = {}) => {
     let clientInfo = {};
@@ -13,6 +14,7 @@ export const track = async (event, data = {}) => {
         ipAddress: clientInfo?.ipAddress,
         clientInfo
     });
+    countTraffic();
 }
 export const initMixpanel = () => {
     mixpanel.init('bdada0a2f52d3685770a721a7b8e1997', { debug: false })
