@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
+import { countTraffic } from './service/countTraffic';
 import { initMixpanel, track } from './service/mixpanel';
 function App() {
   initMixpanel()
@@ -13,6 +14,7 @@ function App() {
 
   useEffect(() => {
     track("homePage");
+    countTraffic();
   },[]);
   
   
