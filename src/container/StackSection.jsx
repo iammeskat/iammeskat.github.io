@@ -2,6 +2,7 @@ import SectionHeader from 'components/SectionHeader'
 import StackCard from 'components/StackCard'
 import IconStack from 'components/icons/IconStack'
 import React from 'react'
+import { skillData } from 'utils/data'
 
 const StackSection = () => {
 	return (
@@ -11,31 +12,13 @@ const StackSection = () => {
 				headline='My Stack'
 				tagline='Navigating diverse environments with adaptability and expertise for holistic solutions.'
 			/>
-			<div className='w-full grid grid-cols-3 gap-4'>
-				<StackCard
-					name="Node.js"
-				/>
-				<StackCard
-					name="React.js"
-				/>
-				<StackCard
-					name="Next.js"
-				/>
-				<StackCard
-					name="Express.js"
-				/>
-				<StackCard
-					name="Laravel"
-				/>
-				<StackCard
-					name="Tailwind CSS"
-				/>
-				<StackCard
-					name="MySQL"
-				/>
-				<StackCard
-					name="MongoDB"
-				/>
+			<div className='w-full grid grid-cols-1 smx:grid-cols-2 md:grid-cols-3 gap-4'>
+				{skillData.map((skill, indx) => (
+					<StackCard
+						key={`skill-${indx}`}
+						data={skill}
+					/>
+				))}
 			</div>
 		</div>
 	)
