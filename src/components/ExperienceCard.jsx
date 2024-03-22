@@ -2,8 +2,8 @@ import React from 'react'
 
 const ExperienceCard = () => {
 	return (
-		<div className='w-full flex flex-col gap-6 p-6 rounded-xl border border-[#141415] bg-[#0a0a0b]'>
-			<div className='w-full flex justify-between items-center gap-4'>
+		<div className='w-full flex flex-col gap-6 p-4 sm:p-6 rounded-xl border border-[#141415] bg-[#0a0a0b]'>
+			<div className='w-full flex flex-col sm:flex-row justify-between sm:items-center gap-4'>
 				<div className='flex items-center gap-2'>
 					<div className='w-[46px] h-[46px] flex items-center justify-center p-1 rounded-lg border border-[#202021] bg-[#19191a]'>
 						<img
@@ -12,12 +12,12 @@ const ExperienceCard = () => {
 							alt='ostad'
 						/>
 					</div>
-					<div className='flex flex-col'>
-						<div className='flex items-center gap-1'>
-							<p className='font-medium text-[#d9d9d9]'>
+					<div className='grow flex flex-col'>
+						<div className='w-full sm:w-auto flex justify-between sm:justify-start sm:items-center gap-1'>
+							<p className='text-lg font-medium text-[#d9d9d9]'>
 								Ostad Pte. Ltd.
 							</p>
-							<div className='px-[10px] py-1 rounded-full border border-[#141415] bg-[#0f0f10] text-[#999999] text-xs font-medium'>
+							<div className='h-fit px-[10px] py-1 rounded-full border border-[#141415] bg-[#0f0f10] text-[#999999] text-xs font-medium'>
 								EdTech
 							</div>
 						</div>
@@ -26,9 +26,11 @@ const ExperienceCard = () => {
 						</p>
 					</div>
 				</div>
-				<p className='font-bold text-[#999999]'>
-					2023 - Present
-				</p>
+				<div className='py-2 sm:py-0 border-y sm:border-y-0 border-[#141415]'>
+					<p className='text-xl font-bold text-[#d9d9d9]'>
+						2023 - Present
+					</p>
+				</div>
 			</div>
 			<div className='w-full flex flex-col gap-1 p-4 rounded-lg border border-[#141415] bg-[#050505]'>
 				<p className='font-medium text-[#d9d9d9]'>

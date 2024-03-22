@@ -7,35 +7,39 @@ export const personalData = {
 export const skillData = [
 	{
 		name: 'React.js',
-		des: 'description here',
+		des: 'JS library for building UIs',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/react.svg'
 	}, {
 		name: 'Next.js',
-		des: 'description here',
+		des: 'Full-stack React framework',
+		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/next.svg'
+	},{
+		name: 'Redux',
+		des: 'State management library',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/next.svg'
 	}, {
 		name: 'Node.js',
-		des: 'description here',
+		des: 'JS runtime for server-side app',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/nodejs.svg'
 	}, {
 		name: 'Express.js',
-		des: 'description here',
+		des: 'Web framework for Node.js',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/express-js.svg'
 	}, {
 		name: 'Laravel',
-		des: 'description here',
+		des: 'PHP web app framework.',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/laravel.svg'
 	}, {
 		name: 'Tailwind CSS',
-		des: 'description here',
+		des: 'Utility-first CSS framework',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/tailwindcss.svg'
 	}, {
 		name: 'MySQL',
-		des: 'description here',
+		des: 'Relational database',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/mysql.svg'
 	}, {
 		name: 'MongoDB',
-		des: 'description here',
+		des: 'NoSQL database',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/mongodb.svg'
 	},
 ]
