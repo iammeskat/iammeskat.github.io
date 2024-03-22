@@ -1,5 +1,7 @@
 export const personalData = {
-	avatar: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/avatar.jpg'
+	avatar: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/avatar.jpg',
+	cv: 'https://drive.google.com/file/d/1qUwvyJMLvmQaqjT_ULExRbgwogGFLRiS/view?usp=sharing',
+	email: 'meskatcse@gmail.com'
 }
 
 export const skillData = [

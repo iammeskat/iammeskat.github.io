@@ -5,8 +5,10 @@ import IconChatBubble from 'components/icons/IconChatBubble'
 import IconDownArrow from 'components/icons/IconDownArrow'
 import IconEnvelop from 'components/icons/IconEnvelop'
 import React from 'react'
+import { personalData } from 'utils/data'
 
 const ContactSection = () => {
+	const { email, cv } = personalData;
 	return (
 		<div className='w-full flex flex-col gap-8'>
 			<SectionHeader
@@ -14,19 +16,29 @@ const ContactSection = () => {
 				headline='I Love to here from you.'
 				tagline="Connect with Me Today. Let's Create Something Amazing Together!"
 			>
-				<div className='flex items-center gap-4 mt-1'>
-					<div className='w-fit'>
+				<div className='flex flex-col xs:flex-row xs:items-center gap-4 mt-4 xs:mt-1'>
+					<a
+						className='w-full xs:w-fit'
+						href={`mailto:${email}`}
+						target='_blank'
+						rel='noreferrer'
+					>
 						<Button
 							text='Email me'
-							icon={<IconEnvelop size='20px' />}
+							icon={<IconEnvelop />}
 						/>
-					</div>
-					<div className='w-fit'>
+					</a>
+					<a
+						className='w-full xs:w-fit'
+						href={cv}
+						target='_blank'
+						rel='noreferrer'
+					>
 						<Button
 							text='Download cv'
-							icon={<IconDownArrow size='20px' />}
+							icon={<IconDownArrow />}
 						/>
-					</div>
+					</a>
 				</div>
 			</SectionHeader>
 			<div className='w-full grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-4'>

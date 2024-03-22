@@ -9,8 +9,8 @@ const SectionHeader = ({
 }) => {
 	return (
 		<div className='Xsticky top-[78px] w-full flex flex-col gap-1 pb-4 border-b border-dashed border-[#202021] bg-[#050505]'>
-			<div className='flex items-center gap-1'>
-				<div className='w-6 h-6'>
+			<div className='flex items-centerX gap-1'>
+				<div className='w-6 h-6 mt-1.5'>
 					{icon}
 				</div>
 				<p className=' font-bold text-2xl'>

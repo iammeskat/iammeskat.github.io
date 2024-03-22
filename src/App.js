@@ -1,6 +1,7 @@
 import ContactSection from 'container/ContactSection'
 import ExperienceSection from 'container/ExperienceSection'
 import Hero from 'container/Hero'
+import ShowcaseSection from 'container/ShowcaseSection'
 import StackSection from 'container/StackSection'
 import React from 'react'
 import Navbar from './components/Navbar'
@@ -13,6 +14,7 @@ const App = () => {
 			<div className='container flex flex-col gap-20'>
 				<ExperienceSection />
 				<StackSection />
+				<ShowcaseSection />
 				<ContactSection />
 			</div>
 		</div>
