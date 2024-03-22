@@ -1,43 +1,58 @@
-import React from 'react'
+import React from 'react';
 
-const ExperienceCard = () => {
+const ExperienceCard = ({ data = {} }) => {
+	const {
+		employer,
+		employerType,
+		web,
+		webLabel,
+		logo,
+		period,
+		designation,
+		description,
+	} = data;
 	return (
 		<div className='w-full flex flex-col gap-6 p-4 sm:p-6 rounded-xl border border-[#141415] bg-[#0a0a0b]'>
 			<div className='w-full flex flex-col sm:flex-row justify-between sm:items-center gap-4'>
 				<div className='flex items-center gap-2'>
-					<div className='w-[46px] h-[46px] flex items-center justify-center p-1 rounded-lg border border-[#202021] bg-[#19191a]'>
+					<div className='w-[46px] min-w-[46px] h-[46px] flex items-center justify-center p-1 rounded-lg border border-[#202021] bg-[#19191a]'>
 						<img
 							className='w-[30px] h-[30px]'
-							src='https://cdn.ostad.app/public/upload/2024-03-10T05-11-30.796Z-single-logo.svg'
-							alt='ostad'
+							src={logo}
+							alt={employer}
 						/>
 					</div>
 					<div className='grow flex flex-col'>
 						<div className='w-full sm:w-auto flex justify-between sm:justify-start sm:items-center gap-1'>
 							<p className='text-lg font-medium text-[#d9d9d9]'>
-								Ostad Pte. Ltd.
+								{employer}
 							</p>
 							<div className='h-fit px-[10px] py-1 rounded-full border border-[#141415] bg-[#0f0f10] text-[#999999] text-xs font-medium'>
-								EdTech
+								{employerType}
 							</div>
 						</div>
-						<p className='text-sm font-medium text-[#999999]'>
-							ostad.app
-						</p>
+						<a
+							className='text-sm font-medium text-[#999999] hover:text-blue-500'
+							href={web}
+							target='_blank'
+							rel='noreferrer'
+						>
+							{webLabel}
+						</a>
 					</div>
 				</div>
 				<div className='py-2 sm:py-0 border-y sm:border-y-0 border-[#141415]'>
 					<p className='text-xl font-bold text-[#d9d9d9]'>
-						2023 - Present
+						{period}
 					</p>
 				</div>
 			</div>
 			<div className='w-full flex flex-col gap-1 p-4 rounded-lg border border-[#141415] bg-[#050505]'>
 				<p className='font-medium text-[#d9d9d9]'>
-					Software Engineer
+					{designation}
 				</p>
 				<p className='text-sm font-medium text-[#999999]'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum blanditiis excepturi ex adipisci, pariatur voluptas. Quo aliquid modi sed dolores dolorem nam neque vel dicta explicabo voluptas, rem excepturi!
+					{description}
 				</p>
 			</div>
 		</div>

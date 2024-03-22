@@ -4,6 +4,28 @@ export const personalData = {
 	email: 'meskatcse@gmail.com'
 }
 
+export const experienceData = [
+	{
+		employer: 'Ostad Pte. Ltd.',
+		employerType: 'EdTech',
+		web: 'https://ostad.app',
+		webLabel: 'ostad.app',
+		logo: 'https://cdn.ostad.app/public/upload/2024-03-10T05-11-30.796Z-single-logo.svg',
+		period: 'Dec 2022 - Present',
+		designation: 'Software Engineer',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum blanditiis excepturi ex adipisci, pariatur voluptas. Quo aliquid modi sed dolores dolorem nam neque vel dicta explicabo voluptas, rem excepturi!'
+	}, {
+		employer: 'Megh Technologies Ltd.',
+		employerType: 'TechFirm',
+		web: 'https://www.facebook.com/meghtechnologiesltd',
+		webLabel: 'meghtechltd.com',
+		logo: 'https://cdn.ostad.app/public/upload/2024-03-10T05-11-30.796Z-single-logo.svg',
+		period: 'Apr 2022 - Sep 2022',
+		designation: 'Software Engineer',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum blanditiis excepturi ex adipisci, pariatur voluptas. Quo aliquid modi sed dolores dolorem nam neque vel dicta explicabo voluptas, rem excepturi!'
+	},
+]
+
 export const skillData = [
 	{
 		name: 'React.js',
@@ -13,10 +35,10 @@ export const skillData = [
 		name: 'Next.js',
 		des: 'Full-stack React framework',
 		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/next.svg'
-	},{
+	}, {
 		name: 'Redux',
 		des: 'State management library',
-		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/33606aff6c1f457ef7b3333abde2511d534ae0fa/storage/images/skill/next.svg'
+		icon: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/skill/redux.svg'
 	}, {
 		name: 'Node.js',
 		des: 'JS runtime for server-side app',
