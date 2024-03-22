@@ -14,7 +14,6 @@ const ExperienceSection = () => {
 			<div className='w-full flex flex-col gap-6'>
 				<ExperienceCard />
 				<ExperienceCard />
-				<ExperienceCard />
 			</div>
 		</div>
 	)
