@@ -7,7 +7,7 @@ const SectionHeader = ({
 	tagline = '',
 }) => {
 	return (
-		<div className='w-full flex flex-col gap-1 pb-4 border-b border-dashed border-[#202021]'>
+		<div className='Xsticky top-[78px] w-full flex flex-col gap-1 pb-4 border-b border-dashed border-[#202021] bg-[#050505]'>
 			<div className='flex items-center gap-1'>
 				{icon}
 				<p className=' font-bold text-2xl'>

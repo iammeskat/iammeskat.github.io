@@ -21,7 +21,12 @@ module.exports = {
 				sm: '868px'
 			}
 		},
-		extend: {},
+		extend: {
+			screens: {
+				xs: "375px",
+				smx: "425px",
+			},
+		},
 	},
 	plugins: [],
 }
