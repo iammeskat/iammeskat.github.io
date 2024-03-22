@@ -1,3 +1,4 @@
+import ContactSection from 'container/ContactSection'
 import ExperienceSection from 'container/ExperienceSection'
 import Hero from 'container/Hero'
 import StackSection from 'container/StackSection'
@@ -12,6 +13,7 @@ const App = () => {
 			<div className='container flex flex-col gap-20'>
 				<ExperienceSection />
 				<StackSection />
+				<ContactSection />
 			</div>
 		</div>
 	)

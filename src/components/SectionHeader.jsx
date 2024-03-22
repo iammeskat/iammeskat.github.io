@@ -5,11 +5,14 @@ const SectionHeader = ({
 	icon = <IconBriefcase />,
 	headline = '',
 	tagline = '',
+	children
 }) => {
 	return (
 		<div className='Xsticky top-[78px] w-full flex flex-col gap-1 pb-4 border-b border-dashed border-[#202021] bg-[#050505]'>
 			<div className='flex items-center gap-1'>
-				{icon}
+				<div className='w-6 h-6'>
+					{icon}
+				</div>
 				<p className=' font-bold text-2xl'>
 					{headline}
 				</p>
@@ -19,6 +22,7 @@ const SectionHeader = ({
 					{tagline}
 				</p>
 			}
+			{children || ''}
 		</div>
 	)
 }

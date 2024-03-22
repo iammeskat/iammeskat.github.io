@@ -1,10 +1,11 @@
+import Button from 'components/core/Button'
 import IconDownArrow from 'components/icons/IconDownArrow'
 import IconEnvelop from 'components/icons/IconEnvelop'
 import React from 'react'
 import { personalData } from 'utils/data'
 
 const Hero = () => {
-	const {avatar} = personalData;
+	const { avatar } = personalData;
 	return (
 		<div className='w-full py-20'>
 			<div className='container flex flex-col md:flex-row items-center gap-8'>
@@ -30,14 +31,14 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className='w-full grid grid-cols-1 smx:grid-cols-2 gap-4'>
-						<button className='w-full flex justify-center items-center gap-1 py-[14px] px-[18px] rounded-lg border border-[#202021] bg-[#121212] hover:bg-[#181818] transition-all duration-300 text-[#999999]'>
-							<IconEnvelop size='20px' />
-							<p className='text-sm font-medium mb-px'>EMAIL ME</p>
-						</button>
-						<button className='w-full flex justify-center items-center gap-1 py-[14px] px-[18px] rounded-lg border border-[#202021] bg-[#121212] hover:bg-[#181818] transition-all duration-300 text-[#999999]'>
-							<IconDownArrow size='20px' />
-							<p className='text-sm font-medium mb-px'>DOWNLOAD CV</p>
-						</button>
+						<Button
+							text='Email me'
+							icon={<IconEnvelop size='20px' />}
+						/>
+						<Button
+							text='Download cv'
+							icon={<IconDownArrow size='20px' />}
+						/>
 					</div>
 				</div>
 			</div>
