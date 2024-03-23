@@ -12,7 +12,7 @@ const MyLogo = () => {
 					/>
 					<path d="m218.4 10.639v112.61h-19.057v-61.33l-33.437 50.242h-15.939l-33.437-50.242v61.33h-19.057v-112.61h19.057v16.979l41.407 62.196 41.406-62.196v-16.979h19.057z" />
 					<path
-						className="primary-text dark:dark-primary-text text-white"
+						className="primary-text dark:dark-primary-text text-blue-500"
 						fill="currentColor"
 						d="m329.46 10.639v19.058h-81.6v-19.058h81.6zm-9.529 62.888v3.812h-72.071v-19.057h72.071v15.245zm-72.072 30.665h81.6v19.058h-81.6v-19.058z"
 					/>

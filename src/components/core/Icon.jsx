@@ -9,11 +9,14 @@ const Icon = ({
 				<div className='w-[30px] h-[30px]'>
 					{children}
 				</div>
-			) : (<img
-				className={`w-[30px] h-[30px] ${rounded ? 'rounded-full object-cover' : ''} `}
-				src={src}
-				alt={alt}
-			/>)}
+			) : (
+				<img
+					className={`w-[30px] h-[30px] ${rounded ? 'rounded-full object-cover' : ''} `}
+					src={src}
+					alt={alt}
+					loading="lazy"
+				/>
+			)}
 		</div>
 	)
 }

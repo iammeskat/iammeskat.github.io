@@ -7,7 +7,7 @@ import { personalData } from 'utils/data'
 const Hero = () => {
 	const { name, about, greetings, avatar, email, cv } = personalData;
 	return (
-		<div className='w-full py-20'>
+		<div className='w-full py-12 sm:py-16 md:py-20'>
 			<div className='container flex flex-col md:flex-row items-center gap-8'>
 				<img
 					className='w-[200px] h-[200px] smx:w-[260px] smx:min-w-[260px] smx:h-[260px] rounded-xl bg-[#121212]'

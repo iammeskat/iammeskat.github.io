@@ -8,10 +8,10 @@ import Navbar from './components/Navbar'
 
 const App = () => {
 	return (
-		<div className='w-full flex flex-col pb-20'>
+		<div className='w-full flex flex-col pb-12 sm:pb-16 md:pb-20'>
 			<Navbar />
 			<Hero />
-			<div className='container flex flex-col gap-20'>
+			<div className='container flex flex-col gap-12 sm:gap-16 md:gap-20'>
 				<ExperienceSection />
 				<StackSection />
 				<ShowcaseSection />

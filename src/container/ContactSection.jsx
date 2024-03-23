@@ -42,22 +42,28 @@ const ContactSection = () => {
 				</div>
 			</SectionHeader>
 			<div className='w-full grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-4'>
-				<div className='md:order-last w-full h-fit grid grid-cols-1 smx:grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-[9px]'>
+				<div className='order-last w-full h-fit grid grid-cols-1 smx:grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-[9px]'>
 					<SocialLinks />
 				</div>
 				<div className='h-fit col-span-2 grid grid-cols-1 md:grid-cols-2 gap-3'>
 					<input
 						className='p-4 rounded-lg bg-[#0F0F10] focus:outline-0'
 						placeholder='Name'
+						disabled
+						title="Under developing"
 					/>
 					<input
 						className='p-4 rounded-lg bg-[#0F0F10] focus:outline-0'
 						placeholder='Email'
+						disabled
+						title="Under developing"
 					/>
 					<textarea
 						className='md:col-span-2 p-4 rounded-lg bg-[#0F0F10] focus:outline-0'
 						rows={8}
 						placeholder='Message'
+						disabled
+						title="Under developing"
 					/>
 					<div className='w-full md:col-span-2'>
 						<Button

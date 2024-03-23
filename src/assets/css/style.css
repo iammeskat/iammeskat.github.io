@@ -593,6 +593,10 @@ body {
   z-index: 10;
 }
 
+.order-last {
+  order: 9999;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -732,22 +736,12 @@ body {
   width: 100%;
 }
 
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .min-w-\[46px\] {
   min-width: 46px;
 }
 
 .max-w-\[500px\] {
   max-width: 500px;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
 }
 
 .grow {
@@ -786,12 +780,12 @@ body {
   gap: 0.25rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-14 {
+  gap: 3.5rem;
 }
 
-.gap-20 {
-  gap: 5rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -816,6 +810,10 @@ body {
 
 .gap-\[9px\] {
   gap: 9px;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-y-4 {
@@ -959,6 +957,16 @@ body {
   padding-bottom: 14px;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -969,6 +977,10 @@ body {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -1034,6 +1046,11 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -1104,19 +1121,15 @@ body {
   .xs\:items-center {
     align-items: center;
   }
-
-  .xs\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .xs\:gap-4 {
-    gap: 1rem;
-  }
 }
 
 @media (min-width: 425px) {
   .smx\:mt-0 {
     margin-top: 0px;
+  }
+
+  .smx\:flex {
+    display: flex;
   }
 
   .smx\:h-\[260px\] {
@@ -1161,6 +1174,10 @@ body {
     justify-content: flex-start;
   }
 
+  .sm\:gap-16 {
+    gap: 4rem;
+  }
+
   .sm\:border-y-0 {
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -1173,6 +1190,15 @@ body {
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
   }
 }
 
@@ -1225,12 +1251,25 @@ body {
     align-items: flex-start;
   }
 
+  .md\:gap-20 {
+    gap: 5rem;
+  }
+
   .md\:gap-4 {
     gap: 1rem;
   }
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .md\:text-start {

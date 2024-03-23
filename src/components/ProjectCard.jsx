@@ -8,7 +8,8 @@ const ProjectCard = ({ data = {} }) => {
 			<img
 				className='w-full xs:w-[324px] xs:min-w-[300px] h-auto aspect-video rounded-xl object-cover object-top bg-[#121212]'
 				src={photo}
-				alt='project'
+				alt={name}
+				loading="lazy"
 			/>
 			<div className='w-full md:w-auto md:grow flex flex-col justify-between gap-4'>
 				<div className='w-full flex flex-col gap-4'>
