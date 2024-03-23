@@ -5,7 +5,7 @@ import React from 'react'
 import { personalData } from 'utils/data'
 
 const Hero = () => {
-	const { avatar, email, cv } = personalData;
+	const { name, about, greetings, avatar, email, cv } = personalData;
 	return (
 		<div className='w-full py-20'>
 			<div className='container flex flex-col md:flex-row items-center gap-8'>
@@ -20,14 +20,14 @@ const Hero = () => {
 					<div className='flex flex-col items-center md:items-start gap-2'>
 						<div className='flex flex-col items-center md:items-start'>
 							<p className='text-lg font-medium text-[#999999]'>
-								👋Hello I'm
+								{greetings}
 							</p>
 							<p className=' text-4xl font-bold'>
-								Meskatul Islam
+								{name}
 							</p>
 						</div>
 						<p className='text-center md:text-start text-[#999999]'>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, illo voluptates maiores aliquam molestiae dolore fugiat
+							{about}
 						</p>
 					</div>
 					<div className='w-full grid grid-cols-1 smx:grid-cols-2 gap-4'>

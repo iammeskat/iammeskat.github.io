@@ -1,6 +1,8 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "homepage": ".",
+  "name": "portfolio",
+  "version": "0.3.0",
+  "writer":"meskatcse@gmail.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

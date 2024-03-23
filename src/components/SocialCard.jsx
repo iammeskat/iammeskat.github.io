@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from './core/Icon';
 import IconArrowRight from './icons/IconArrowRight';
 
 const SocialCard = ({ data = {} }) => {
@@ -11,11 +12,9 @@ const SocialCard = ({ data = {} }) => {
 			rel="noreferrer"
 		>
 			<div className='flex items-center gap-2'>
-				<div className='w-[46px] h-[46px] flex items-center justify-center p-1 rounded-lg border border-[#202021] bg-[#19191a]'>
-					<div className='w-[30px] h-[30px]'>
-						{icon}
-					</div>
-				</div>
+				<Icon>
+					{icon}
+				</Icon>
 
 				<div className='flex flex-col'>
 					<p className='font-medium text-[#d9d9d9]'>

@@ -10,7 +10,7 @@ const StackSection = () => {
 			<SectionHeader
 				icon={<IconStack />}
 				headline='My Stack'
-				tagline='Navigating diverse environments with adaptability and expertise for holistic solutions.'
+				tagline='Dedicated to continuously mastering the latest technology trends and techniques in software engineering.'
 			/>
 			<div className='w-full grid grid-cols-1 smx:grid-cols-2 md:grid-cols-3 gap-4'>
 				{skillData.map((skill, indx) => (

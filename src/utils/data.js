@@ -1,7 +1,10 @@
 export const personalData = {
+	email: 'meskatcse@gmail.com',
+	name: 'Meskatul Islam',
+	greetings: "👋Assalamu Alaikum, I'm",
+	about: 'Experienced full-stack developer from Chittagong, Bangladesh with a broad skill set spanning both front-end and back-end technologies and two (2) years plus of professional experience.',
 	avatar: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/avatar.jpg',
 	cv: 'https://drive.google.com/file/d/1qUwvyJMLvmQaqjT_ULExRbgwogGFLRiS/view?usp=sharing',
-	email: 'meskatcse@gmail.com'
 }
 
 export const experienceData = [
@@ -13,16 +16,18 @@ export const experienceData = [
 		logo: 'https://cdn.ostad.app/public/upload/2024-03-10T05-11-30.796Z-single-logo.svg',
 		period: 'Dec 2022 - Present',
 		designation: 'Software Engineer',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum blanditiis excepturi ex adipisci, pariatur voluptas. Quo aliquid modi sed dolores dolorem nam neque vel dicta explicabo voluptas, rem excepturi!'
+		expertise:'Area of Expertise: React.js, Next.js, Redux, Tailwind CSS & Etc.',
+		description: 'Contributing to 8 projects and collaborate with other team members. I excel in a range of tasks including UI building, web design and development, API integration, performance optimization, bug finding & fixing, and building essential core components.'
 	}, {
 		employer: 'Megh Technologies Ltd.',
 		employerType: 'TechFirm',
 		web: 'https://www.facebook.com/meghtechnologiesltd',
 		webLabel: 'meghtechltd.com',
-		logo: 'https://cdn.ostad.app/public/upload/2024-03-10T05-11-30.796Z-single-logo.svg',
+		logo: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/meghtech-logo.png',
 		period: 'Apr 2022 - Sep 2022',
 		designation: 'Software Engineer',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum blanditiis excepturi ex adipisci, pariatur voluptas. Quo aliquid modi sed dolores dolorem nam neque vel dicta explicabo voluptas, rem excepturi!'
+		expertise:'Area of Expertise: Laravel, Database Designing, Vue.js, jQuery, Tailwind CSS & Etc.',
+		description: 'I have done 5 incomplete projects and specialize in API development, database design, web design and development, performance optimization, bug identification and fixing, and collaborate with other team members.'
 	},
 ]
 

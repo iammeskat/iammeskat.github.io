@@ -10,7 +10,7 @@ const ExperienceSection = () => {
 			<SectionHeader
 				icon={<IconBriefcase />}
 				headline='My Experience'
-				tagline='Navigating diverse environments with adaptability and expertise for holistic solutions.'
+				tagline='Expertly navigating diverse tech environments to deliver holistic solutions.'
 			/>
 			<div className='w-full flex flex-col gap-6'>
 				{experienceData.map((item, indx) => (

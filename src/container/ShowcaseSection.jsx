@@ -9,7 +9,7 @@ const ShowcaseSection = () => {
 			<SectionHeader
 				icon={<IconCode />}
 				headline='My Work & Contribution'
-				tagline='Explore a collection of my most innovative and visually stunning design works.'
+				tagline='Explore a collection of groundbreaking software projects,  quality, and impactful contributions.'
 			/>
 			<div className='w-full flex flex-col gap-6'>
 				<ProjectCard/>
