@@ -13,12 +13,31 @@ const App = () => {
 		<div className='w-full flex flex-col pb-12 sm:pb-16 md:pb-20'>
 			<Navbar />
 			<Hero />
-			<div className='container flex flex-col gap-12 sm:gap-16 md:gap-20'>
-				<ExperienceSection />
-				<StackSection />
-				<ShowcaseSection />
-				<ContactSection />
+			<div className='container flex flex-col'>
+				<WrapSection id="section-experience">
+					<ExperienceSection />
+				</WrapSection>
+				<WrapSection id="section-skill">
+					<StackSection />
+				</WrapSection>
+				<WrapSection id="section-work">
+					<ShowcaseSection />
+				</WrapSection>
+				<WrapSection id="section-contact">
+					<ContactSection />
+				</WrapSection>
 			</div>
+		</div>
+	)
+}
+
+const WrapSection = ({ id, children }) => {
+	return (
+		<div
+			id={id}
+			className='w-full pb-12 sm:pb-16 md:pb-20'
+		>
+			{children}
 		</div>
 	)
 }
