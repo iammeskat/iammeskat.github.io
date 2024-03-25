@@ -8,7 +8,7 @@ import { useTrack } from 'utils/useTrack'
 import Navbar from './components/Navbar'
 
 const App = () => {
-	useTrack();
+	// useTrack();
 	return (
 		<div className='w-full flex flex-col pb-12 sm:pb-16 md:pb-20'>
 			<Navbar />
