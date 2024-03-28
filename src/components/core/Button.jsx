@@ -9,7 +9,7 @@ const Button = ({
 }) => {
 	return (
 		<button
-			className={`w-full flex justify-center items-center gap-1 py-[14px] px-[18px] rounded-lg border border-[#202021] bg-[#121212] hover:bg-[#181818] transition-all duration-300 text-[#999999] uppercase ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+			className={`w-full flex justify-center items-center gap-1 py-[14px] px-[18px] rounded-lg border border-[#202021] bg-[#121212] hover:bg-[#181818] transition-all duration-300 text-[#999999] uppercase ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'} active:scale-95`}
 			onClick={onClick}
 			{...props}
 		>

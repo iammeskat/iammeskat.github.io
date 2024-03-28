@@ -5,7 +5,7 @@ export const useTrack = () => {
 	initMixpanel();
 
 	useEffect(() => {
-		// track('home-page');
+		track('home-page');
 		countTraffic();
 	}, []);
 

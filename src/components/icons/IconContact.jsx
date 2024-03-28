@@ -1,10 +1,12 @@
 const IconContact = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="w-5 h-5 primary-text dark:dark-primary-text group-hover:text-slate-900 dark:group-hover:text-white"
+	 xmlns="http://www.w3.org/2000/svg"
+	 fill="none"
+	 viewBox="0 0 24 24"
+	 strokeWidth={1.5}
+	 stroke="currentColor"
+	 className='w-full h-full'
     >
       <path
         fillRule="evenodd"

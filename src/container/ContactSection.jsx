@@ -13,7 +13,6 @@ const ContactSection = () => {
 	const [formData, setFormData] = useState();
 	const [loading, setLoading] = useState(false);
 	const [isSent, setIsSent] = useState(false);
-	console.log({ formData });
 
 
 	const handleOnChange = ({ target = {} }) => {

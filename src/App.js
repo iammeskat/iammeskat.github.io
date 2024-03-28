@@ -1,3 +1,5 @@
+import Footer from 'components/layout/Footer'
+import Navbar from 'components/layout/Navbar'
 import ContactSection from 'container/ContactSection'
 import ExperienceSection from 'container/ExperienceSection'
 import Hero from 'container/Hero'
@@ -5,15 +7,14 @@ import ShowcaseSection from 'container/ShowcaseSection'
 import StackSection from 'container/StackSection'
 import React from 'react'
 import { useTrack } from 'utils/useTrack'
-import Navbar from './components/Navbar'
 
 const App = () => {
 	useTrack();
 	return (
-		<div className='w-full flex flex-col pb-12 sm:pb-16 md:pb-20'>
+		<div className='w-full flex flex-col'>
 			<Navbar />
 			<Hero />
-			<div className='container flex flex-col'>
+			<div className='container flex flex-col pb-2 sm:pb-6 md:pb-8'>
 				<WrapSection id="section-experience">
 					<ExperienceSection />
 				</WrapSection>
@@ -27,6 +28,7 @@ const App = () => {
 					<ContactSection />
 				</WrapSection>
 			</div>
+			<Footer />
 		</div>
 	)
 }

@@ -7,7 +7,7 @@ const SocialCard = ({ data = {} }) => {
 	const { icon, name, des, link } = data;
 	return (
 		<a
-			className='group w-full flex justify-between items-center gap-2 p-2 rounded-xl border border-[#141415] bg-[#0a0a0b] hover:bg-[#121212] transition-all duration-300 cursor-pointer overflow-hidden'
+			className='group w-full flex justify-between items-center gap-2 p-2 rounded-xl border border-[#141415] bg-[#0a0a0b] hover:bg-[#121212] transition-all duration-300 cursor-pointer overflow-hidden active:scale-95'
 			href={link}
 			target="_blank"
 			rel="noreferrer"

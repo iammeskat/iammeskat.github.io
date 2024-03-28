@@ -26,3 +26,18 @@ export const convertTo2DArray = (arr, rowsPerColumn) => {
 
 	return result;
 }
+
+export const scrollToSection = (targetId) => {
+	const targetSection = document.getElementById(targetId);
+	if (targetSection) {
+		targetSection.scrollIntoView({ behavior: "smooth" });
+	}
+};
+
+export const shallowRoute = (title = '') => {
+	window.history.replaceState(
+		{},
+		`${title} | Meskatul Islam`,
+		`/${title.toLowerCase()}`
+	);
+}

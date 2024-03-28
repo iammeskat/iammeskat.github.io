@@ -27,7 +27,7 @@ const Hero = () => {
 								<p className='text-lg font-medium text-[#999999]'>
 									{greetings}
 								</p>
-								<p className=' text-4xl font-bold'>
+								<p className='text-center text-4xl font-bold'>
 									{name}
 								</p>
 							</div>
