@@ -1,4 +1,5 @@
 import React from 'react';
+import { track } from 'utils/apis';
 import Icon from './core/Icon';
 import IconArrowRight from './icons/IconArrowRight';
 
@@ -10,6 +11,7 @@ const SocialCard = ({ data = {} }) => {
 			href={link}
 			target="_blank"
 			rel="noreferrer"
+			onClick={() => track('social-link', { platform: des })}
 		>
 			<div className='flex items-center gap-2'>
 				<Icon>

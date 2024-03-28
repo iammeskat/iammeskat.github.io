@@ -1,4 +1,5 @@
 import React from 'react';
+import { track } from 'utils/apis';
 import Icon from './core/Icon';
 
 const ExperienceCard = ({ data = {} }) => {
@@ -29,6 +30,7 @@ const ExperienceCard = ({ data = {} }) => {
 								href={web}
 								target='_blank'
 								rel='noreferrer'
+								onClick={() => track('company-title', { employer })}
 							>
 								{employer} &nbsp;
 								<span className='xs:hidden h-fit px-[10px] py-1 rounded-full border border-[#141415] bg-[#0f0f10] text-[#999999] text-xs font-medium'>
@@ -44,6 +46,7 @@ const ExperienceCard = ({ data = {} }) => {
 							href={web}
 							target='_blank'
 							rel='noreferrer'
+							onClick={() => track('company-link', { employer })}
 						>
 							{webLabel}
 						</a>

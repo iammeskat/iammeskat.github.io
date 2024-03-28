@@ -2,6 +2,7 @@ import Button from 'components/core/Button'
 import IconDownArrow from 'components/icons/IconDownArrow'
 import IconEnvelop from 'components/icons/IconEnvelop'
 import React from 'react'
+import { track } from 'utils/apis'
 import { personalData } from 'utils/data'
 
 const Hero = () => {
@@ -42,6 +43,7 @@ const Hero = () => {
 								<Button
 									text='Email me'
 									icon={<IconEnvelop />}
+									onClick={() => track('email-me-button', { from: 'hero' })}
 								/>
 							</a>
 							<a
@@ -53,6 +55,7 @@ const Hero = () => {
 								<Button
 									text='Download cv'
 									icon={<IconDownArrow />}
+									onClick={() => track('download-cv-button', { from: 'hero' })}
 								/>
 							</a>
 						</div>

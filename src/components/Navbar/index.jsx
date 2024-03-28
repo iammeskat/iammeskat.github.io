@@ -1,6 +1,7 @@
 import Logo from 'components/Logo';
 import React from 'react';
 import { Link } from 'react-scroll';
+import { track } from 'utils/apis';
 
 
 const Navbar = () => {
@@ -28,13 +29,16 @@ const Navbar = () => {
 				<Logo />
 				<ul className='hidden smx:flex items-center gap-2 text-xs font-medium text-[#999999]'>
 					{navItems.map((item, indx) => (
-						<li key={`nav-item-${indx}`}>
+						<li
+							key={`nav-item-${indx}`}
+						>
 							<Link
 								to={item.to}
 								offset={-80}
 								spy
 								activeClass='text-white'
 								className='hover:text-blue-500 cursor-pointer transition-all duration-300'
+								onClick={() => track(`nav-link-${item.title}`)}
 							>
 								{item.title}
 							</Link>

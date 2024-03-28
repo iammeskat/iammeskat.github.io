@@ -4,11 +4,36 @@ import Button from 'components/core/Button'
 import IconChatBubble from 'components/icons/IconChatBubble'
 import IconDownArrow from 'components/icons/IconDownArrow'
 import IconEnvelop from 'components/icons/IconEnvelop'
-import React from 'react'
+import React, { useState } from 'react'
+import { track } from 'utils/apis'
 import { personalData } from 'utils/data'
 
 const ContactSection = () => {
 	const { email, cv } = personalData;
+	const [formData, setFormData] = useState();
+	const [loading, setLoading] = useState(false);
+	const [isSent, setIsSent] = useState(false);
+	console.log({ formData });
+
+
+	const handleOnChange = ({ target = {} }) => {
+		const { name, value } = target;
+		setFormData((prev) => ({
+			...prev, [name]: value
+		}));
+		setIsSent(false);
+	}
+
+	const handleSendMessage = async (e) => {
+		e.preventDefault();
+		setLoading(true);
+		await track('message', { message: formData });
+		setTimeout(() => {
+			setIsSent(true);
+			setLoading(false);
+		}, 1000);
+	}
+
 	return (
 		<div className='w-full flex flex-col gap-8'>
 			<SectionHeader
@@ -26,6 +51,7 @@ const ContactSection = () => {
 						<Button
 							text='Email me'
 							icon={<IconEnvelop />}
+							onClick={() => track('email-me-button', { from: 'contact' })}
 						/>
 					</a>
 					<a
@@ -37,6 +63,7 @@ const ContactSection = () => {
 						<Button
 							text='Download cv'
 							icon={<IconDownArrow />}
+							onClick={() => track('download-cv-button', { from: 'contact' })}
 						/>
 					</a>
 				</div>
@@ -45,32 +72,41 @@ const ContactSection = () => {
 				<div className='order-last w-full h-fit grid grid-cols-1 smx:grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-[9px]'>
 					<SocialLinks />
 				</div>
-				<div className='h-fit col-span-2 grid grid-cols-1 md:grid-cols-2 gap-3'>
+				<form
+					onSubmit={handleSendMessage}
+					className='h-fit col-span-2 grid grid-cols-1 md:grid-cols-2 gap-3'
+				>
 					<input
 						className='p-4 rounded-lg bg-[#0F0F10] focus:outline-0'
 						placeholder='Name'
-						disabled
-						title="Under developing"
+						name="name"
+						onChange={handleOnChange}
+						required
 					/>
 					<input
 						className='p-4 rounded-lg bg-[#0F0F10] focus:outline-0'
+						type="email"
 						placeholder='Email'
-						disabled
-						title="Under developing"
+						name="email"
+						onChange={handleOnChange}
+						required
 					/>
 					<textarea
 						className='md:col-span-2 p-4 rounded-lg bg-[#0F0F10] focus:outline-0'
 						rows={8}
 						placeholder='Message'
-						disabled
-						title="Under developing"
+						name="message"
+						onChange={handleOnChange}
+						required
 					/>
 					<div className='w-full md:col-span-2'>
 						<Button
-							text="send message"
+							type="submit"
+							text={isSent ? "Message sent" : (loading ? "Message sending..." : "send message")}
+							disabled={isSent}
 						/>
 					</div>
-				</div>
+				</form>
 
 			</div>
 		</div>

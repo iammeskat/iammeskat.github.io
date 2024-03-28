@@ -1,4 +1,5 @@
 import React from 'react';
+import { track } from 'utils/apis';
 import IconLink from './icons/IconLink';
 
 const ProjectCard = ({ data = {} }) => {
@@ -19,6 +20,7 @@ const ProjectCard = ({ data = {} }) => {
 							href="https://ostad.app"
 							target="_blank"
 							rel="noreferrer"
+							onClick={() => track('project-title', { projectName: name })}
 						>
 							{name}
 						</a>
@@ -28,6 +30,7 @@ const ProjectCard = ({ data = {} }) => {
 								href={`https://${url}`}
 								target="_blank"
 								rel="noreferrer"
+								onClick={() => track('project-link', { projectName: name })}
 							>
 								<div className='w-4 h-4'>
 									<IconLink />

@@ -3,6 +3,7 @@ import SectionHeader from 'components/SectionHeader'
 import Button from 'components/core/Button'
 import IconCode from 'components/icons/IconCode'
 import React, { useState } from 'react'
+import { track } from 'utils/apis'
 import { projectData } from 'utils/data'
 
 const ShowcaseSection = () => {
@@ -25,7 +26,10 @@ const ShowcaseSection = () => {
 					<div className='w-full Xmax-w-[200px] mx-auto'>
 						<Button
 							text={seeAll ? 'See less' : 'See more'}
-							onClick={() => setSeeAll(!seeAll)}
+							onClick={() => {
+								setSeeAll(!seeAll);
+								track('see-more-project-button')
+							}}
 						/>
 					</div>
 				}
