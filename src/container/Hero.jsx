@@ -1,4 +1,3 @@
-import GhGraph from 'components/GhGraph'
 import Button from 'components/core/Button'
 import IconDownArrow from 'components/icons/IconDownArrow'
 import IconEnvelop from 'components/icons/IconEnvelop'
@@ -59,7 +58,7 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<GhGraph />
+				{/* <GhGraph /> */}
 			</div>
 		</div>
 	)
