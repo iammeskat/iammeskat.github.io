@@ -9,7 +9,7 @@ import React from 'react'
 import { useTrack } from 'utils/useTrack'
 
 const App = () => {
-	useTrack();
+	// useTrack();
 	return (
 		<div className='w-full flex flex-col'>
 			<Navbar />

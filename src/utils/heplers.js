@@ -40,4 +40,5 @@ export const shallowRoute = (title = '') => {
 		`${title} | Meskatul Islam`,
 		`/${title.toLowerCase()}`
 	);
+	window.document.title = `${title} | Meskatul Islam - Software Engineer`
 }

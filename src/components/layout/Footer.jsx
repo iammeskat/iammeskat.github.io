@@ -33,7 +33,7 @@ const Footer = () => {
 		},
 	];
 	return (
-		<footer className="flex flex-col  justify-center items-center bg-[#121212] p-2 text-[#999999] text-xs">
+		<footer className="flex flex-col  justify-center items-center bg-[#121212] p-2 text-[#62626f] text-xs">
 			<div className="w-16 md:w-24 h-auto">
 				<MyLogo />
 			</div>

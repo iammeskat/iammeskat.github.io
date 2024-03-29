@@ -1,3 +1,9 @@
+import IconFb from "components/icons/IconFb";
+import IconGithub from "components/icons/IconGithub";
+import IconIg from "components/icons/IconIg";
+import IconLinkedin from "components/icons/IconLinkedin";
+import IconX from "components/icons/IconX";
+
 export const personalData = {
 	email: 'meskatcse@gmail.com',
 	name: 'Meskatul Islam',
@@ -6,6 +12,35 @@ export const personalData = {
 	avatar: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/avatar.png',
 	cv: 'https://drive.google.com/file/d/1qUwvyJMLvmQaqjT_ULExRbgwogGFLRiS/view?usp=sharing',
 }
+
+export const socialLinks = [
+	{
+		name: "iammeskat",
+		des: 'GitHub',
+		icon: IconGithub,
+		link: 'https://github.com/iammeskat'
+	}, {
+		name: "meskat",
+		des: 'LinkedIn',
+		icon: IconLinkedin,
+		link: 'https://linkedin.com/in/meskat'
+	}, {
+		name: "M35K47",
+		des: 'X (Twitter)',
+		icon: IconX,
+		link: 'https://twitter.com/m35k47'
+	}, {
+		name: "M35K47",
+		des: 'Facebook',
+		icon: IconFb,
+		link: 'https://facebook.com/m35k47'
+	}, {
+		name: "meskatul.islam",
+		des: 'Instagram',
+		icon: IconIg,
+		link: 'https://instagram.com/meskatul.islam'
+	},
+];
 
 export const experienceData = [
 	{
@@ -96,7 +131,7 @@ export const projectData = [
 		technologies: 'React.js • Next.js • Redux • Tailwind CSS',
 		description: 'Talent acquisition platform of Ostad. Where job seekers and recruiters create their profiles for job applications and the recruiting process.',
 		photo: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/project/talent.png'
-	},{
+	}, {
 		name: 'Capsicum UI',
 		url: 'capsicum.ostad.app',
 		technologies: 'React.js • Storybook • Tailwind CSS',

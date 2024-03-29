@@ -32,7 +32,7 @@ const Navbar = () => {
 						>
 							<Link
 								to={item.to}
-								offset={-80}
+								offset={-200}
 								spy
 								activeClass='text-white'
 								className='hover:text-blue-500 cursor-pointer transition-all duration-300'

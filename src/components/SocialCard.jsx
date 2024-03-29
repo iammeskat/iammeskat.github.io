@@ -15,7 +15,7 @@ const SocialCard = ({ data = {} }) => {
 		>
 			<div className='flex items-center gap-2'>
 				<Icon>
-					{icon}
+					{icon()}
 				</Icon>
 
 				<div className='flex flex-col'>
