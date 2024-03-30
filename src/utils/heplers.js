@@ -30,7 +30,10 @@ export const convertTo2DArray = (arr, rowsPerColumn) => {
 export const scrollToSection = (targetId) => {
 	const targetSection = document.getElementById(targetId);
 	if (targetSection) {
-		targetSection.scrollIntoView({ behavior: "smooth" });
+		targetSection.scrollIntoView({
+			block: 'center',
+			behavior: "instant",
+		});
 	}
 };
 
