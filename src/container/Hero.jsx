@@ -10,7 +10,7 @@ const Hero = () => {
 	return (
 		<div
 			id="section-home"
-			className='w-full py-12 sm:py-16 md:py-20'
+			className='w-full pt-12 sm:pt-16 md:pt-20'
 		>
 			<div className='container flex flex-col gap-8'>
 				<div className='container flex flex-col md:flex-row items-center gap-8'>

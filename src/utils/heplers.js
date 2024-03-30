@@ -31,7 +31,7 @@ export const scrollToSection = (targetId) => {
 	const targetSection = document.getElementById(targetId);
 	if (targetSection) {
 		targetSection.scrollIntoView({
-			block: 'center',
+			block: 'start',
 			behavior: "instant",
 		});
 	}

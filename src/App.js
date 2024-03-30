@@ -37,7 +37,7 @@ const WrapSection = ({ id, children }) => {
 	return (
 		<div
 			id={id}
-			className='w-full pb-12 sm:pb-16 md:pb-20'
+			className='w-full pt-12 sm:pt-16 md:pt-20'
 		>
 			{children}
 		</div>
