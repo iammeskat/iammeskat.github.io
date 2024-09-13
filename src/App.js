@@ -6,10 +6,9 @@ import Hero from 'container/Hero'
 import ShowcaseSection from 'container/ShowcaseSection'
 import StackSection from 'container/StackSection'
 import React from 'react'
-import { useTrack } from 'utils/useTrack'
 
 const App = () => {
-	useTrack();
+	// useTrack();
 	return (
 		<div className='w-full flex flex-col'>
 			<Navbar />
