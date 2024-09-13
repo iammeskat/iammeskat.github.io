@@ -18,9 +18,8 @@ const Hero = () => {
 						className='w-[200px] h-auto smx:w-[260px] smx:min-w-[260px] rounded-xl bg-[#121212] object-cover aspect-[4/5]'
 						src={avatar}
 						alt='avatar'
-					>
-
-					</img>
+						onClick={() => track('avatar')}
+					/>
 					<div className='grow max-w-[500px] md:max-w-none flex flex-col items-center md:items-start gap-5'>
 						<div className='flex flex-col items-center md:items-start gap-2'>
 							<div className='flex flex-col items-center md:items-start'>
