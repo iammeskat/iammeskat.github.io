@@ -679,6 +679,22 @@ body {
   aspect-ratio: 16 / 9;
 }
 
+.aspect-\[3\/5\] {
+  aspect-ratio: 3/5;
+}
+
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
+}
+
+.aspect-\[2\/2\.5\] {
+  aspect-ratio: 2/2.5;
+}
+
+.aspect-\[4\/5\] {
+  aspect-ratio: 4/5;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -699,8 +715,8 @@ body {
   height: 10px;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-\[250px\] {
+  height: 250px;
 }
 
 .h-\[30px\] {
@@ -723,10 +739,6 @@ body {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[250px\] {
-  height: 250px;
 }
 
 .max-h-\[46px\] {
@@ -1221,14 +1233,6 @@ body {
 
   .smx\:hidden {
     display: none;
-  }
-
-  .smx\:h-\[260px\] {
-    height: 260px;
-  }
-
-  .smx\:h-\[390px\] {
-    height: 390px;
   }
 
   .smx\:h-\[325px\] {
