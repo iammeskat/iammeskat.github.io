@@ -9,7 +9,7 @@ export const personalData = {
 	name: 'Meskatul Islam',
 	greetings: "👋Assalamu Alaikum, I'm",
 	about: 'Experienced full-stack developer from Chittagong, Bangladesh with a broad skill set spanning both front-end and back-end technologies and two (2) years plus of professional experience.',
-	avatar: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/avatar.png',
+	avatar: 'https://raw.githubusercontent.com/iammeskat/iammeskat.github.io/version-3/storage/images/avatar.jpg',
 	cv: 'https://drive.google.com/file/d/1qUwvyJMLvmQaqjT_ULExRbgwogGFLRiS/view?usp=sharing',
 }
 
