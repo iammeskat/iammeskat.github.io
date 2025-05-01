@@ -60,7 +60,7 @@ const ContactSection = () => {
 						rel='noreferrer'
 					>
 						<Button
-							text='Download cv'
+							text='Get Resume'
 							icon={<IconDownArrow />}
 							onClick={() => track('download-cv-button', { from: 'contact' })}
 						/>
